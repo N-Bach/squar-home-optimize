@@ -1,0 +1,144 @@
+doctype html
+html(lang='en')
+  head
+    title MYSQUAR - Connecting Myanmar
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', type='text/css', href='/css/vendor/animate.min.css')
+    link(rel='stylesheet', type='text/css', href='/css/base-sidenav.css')
+    link(rel='stylesheet', type='text/css', href='/css/detail/callhome.css')
+    link(rel='shortcut icon', href='/img/icon/favicon.ico')
+  body
+    a(href='/')
+      img.logo.pointer.animated.fadeInLeft(src='/img/icon/Logo-Mysquar.png', alt='logo')
+    span#hamburger.pointer.animated.fadeInRight(onclick='openNav()')
+      img#ic-hamburger(src='/img/icon/ic-menu.png', alt='sidenav')
+    #mySidenav.sidenav
+      img.closebtn.pointer(src='/img/icon/ic-close.png', alt='Close', onclick='closeNav()')
+      .page-link
+        a(href='/products')
+          span Our Products
+        a(href='https://careers.mysquar.com/', target='_blank')
+          span We Are Hiring
+        a(href='http://investors.mysquar.com/', target='_blank')
+          span For Investors
+        a(href='/contactus ')
+          span Contact Us
+      footer
+        .social-link
+          a(href='https://twitter.com/mysquar', target='_blank')
+            img(src='/img/icon/ic-twitter.png', alt='twitter')
+          a(href='https://www.linkedin.com/company/squar-asia', target='_blank')
+            img(src='/img/icon/ic-linkedin.png', alt='linked')
+          a(href='https://www.youtube.com/channel/UChv63ZLGBBQERh2Kz4T84Iw', target='_blank')
+            img(src='/img/icon/ic-youtube.png', alt='youtube')
+        span © 2017 SQUAR PTE LTD. All Rights Reserved
+    .breadcrum-container.animated.fadeIn
+      ul.breadcrumb
+        li
+          a(href='/')
+            img.ic-home(src='/img/icon/ic-home-white.png', alt='Home')
+        li
+          a(href='/products') OUR PRODUCTS
+        li CALLHOME
+    #callhome-bg.header.animated.fadeIn
+      .content
+        // <div class="hero half"></div>
+        #callhome-hero.hero.animated.fadeInLeft.delay-hero
+        .intro.animated.fadeInRight.delay-intro
+          .logo-mychat.mg-bottom-8
+            img(src='/img/detail/callhome/logo-callhome.png', alt='logo-callhome', height='80px', width='80px')
+          .name.mg-bottom-8
+            | CallHome
+          .description.mg-bottom-26
+            | A VOIP app that lets you call anyone internationally at affordable rates, even if they don't have the app installed!
+            br
+            .notice
+              | *Available for download in Cambodia, India, Indonesia, Laos, Malaysia, Pakistan, Philippines, Singapore, Thailand
+              | and Vietnam.
+          .app-link.mg-bottom-26
+            button.google-play(onclick=" window.open('https://play.google.com/store/apps/details?id=com.squar.callhome.production','_blank')")
+              img(src='/img/icon/btt-google.png', alt='Get CallHome in Google Play')
+          .follow
+            | Follow us on
+            a(href='https://www.facebook.com/CallHomeMySQUAR/', target='_blank')
+              img(src='/img/icon/if-fb-white.png', alt='CallHome FB page', width='24px', height='24px')
+    .container
+      section#overview.bg-grey.section-padding
+        .content
+          .half.is-animated-left.delay-overview
+            .text
+              .wrapper.maxwidth-overview
+                .title
+                  | call anyone, anytime!
+                .body
+                  | An app that lets you stay in touch with friends and family in 190+ countries at affordable rates. Start by downloading our
+                  | app and get updated with what your friends and family are doing right now.
+                  br
+                  br
+                  |  With affordable calling rates to a landline or mobile phone, CallHome helps you keep close ties
+                  |                 with your important connections abroad across 190+ countries. Now distance makes no difference.
+                  br
+                  br
+                  |  Who's waiting to hear from you? Don't let them wait - Call them right away!
+          .half.is-animated-right.delay-overview
+            .mockup
+              img(src='/img/detail/callhome/mockup-update.png', alt='callhome-overview')
+      section#feature.section-padding
+        #special-content-reverse.content
+          .half.is-animated-left
+            .mockup
+              img(src='/img/detail/callhome/mockup-feature.png', alt='callhome-overview')
+          .half.is-animated-right
+            .text
+              .wrapper.maxwidth-feature
+                .title
+                  | key features.
+                .body
+                  span Affordable rates
+                  br
+                  |  Buy discounted bundles to specific countries or pay as you go.
+                  br
+                  br
+                  span Less dropped calls
+                  br
+                  |  The app has been optimized for crystal clear audio quality using 3G,
+                  |                 4G or WiFi.
+                  br
+                  br
+                  span Easy payment options
+                  br
+                  |  Seamless payment using Stripe and PayPal.
+                  br
+                  br
+      //
+        <section id="update" class="bg-grey section-padding">
+        <div class="content">
+        <div class="half is-animated-left">
+        <div class="text">
+        <div class="wrapper maxwidth-update">
+        <div class="title">
+        what’s new.
+        </div>
+        <div class="body">
+        - Caller sees charges for each call <br/> - Caller calls to a phone number using dial pad <br/> - When caller
+        is typing dial pad, show matching contact name <br/> - Payment by credit card with Stripe <br/>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="half is-animated-right">
+        <div class="mockup">
+        <img src="/img/detail/callhome/mockup-update.png" alt="callhome-overview">
+        </div>
+        </div>
+        </div>
+        </section>
+    footer.product-footer.animated.fadeIn.delay-foot
+      span © 2017 SQUAR PTE LTD. All Rights Reserved.
+    script.
+      var isGame = true;
+    script(type='text/javascript ', src='/js/vendor/jquery.min.js ')
+    script(type='text/javascript ', src='/js/vendor/jquery.viewportchecker.min.js')
+    script(type='text/javascript ', src='/js/base-sidenav.js ')
+    script(type='text/javascript ', src='/js/detail/animation.js ')

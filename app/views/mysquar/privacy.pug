@@ -1,0 +1,110 @@
+doctype html
+html(lang='en')
+  head
+    title MYSQUAR Privacy
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(href=assetPath('animate.min.css'), rel='stylesheet')
+    link(href=assetPath('base-sidenav.css'), rel='stylesheet')
+    link(href=assetPath('community-style.css'), rel='stylesheet')
+  body
+    a(href='/')
+      img.logo.animated.fadeInLeft(src=assetPath('img/common/icon/Logo-Mysquar.png'), alt='logo')
+    span#hamburger.pointer.animated.fadeInRight(onclick='openNav()')
+      img#ic-hamburger(src=assetPath('img/common/icon/ic-menu.png'), alt='sidenav')
+    #mySidenav.sidenav
+      img.closebtn.pointer(src=assetPath('img/common/icon/ic-close.png'), alt='Close', onclick='closeNav()')
+      .page-link
+        a(href='/products')
+          span Our Products
+        a(href='https://careers.mysquar.com/', target='_blank')
+          span We Are Hiring
+        a(href='http://investors.mysquar.com/', target='_blank')
+          span For Investors
+        a(href='/contactus ')
+          span Contact Us
+      footer
+        .social-link
+          a(href='https://twitter.com/mysquar', target='_blank')
+            img(src=assetPath('img/common/icon/ic-twitter.png'), alt='twitter')
+          a(href='https://www.linkedin.com/company/squar-asia', target='_blank')
+            img(src=assetPath('img/common/icon/ic-linkedin.png'), alt='linked')
+          a(href='https://www.youtube.com/channel/UChv63ZLGBBQERh2Kz4T84Iw', target='_blank')
+            img(src=assetPath('img/common/icon/ic-youtube.png'), alt='youtube')
+        span © 2017 SQUAR PTE LTD. All Rights Reserved
+    .header.privacy.animated.fadeIn
+      .breadcrum-container.animated.fadeIn
+        ul.breadcrumb
+          li
+            a(href='/')
+              img.ic-home(src=assetPath('img/common/icon/ic-home-white.png'), alt='Home')
+          li
+            a(href='/contactus') CONTACT US
+          li PRIVACY POLICY
+      .title.animated.fadeIn.delay-title Privacy Policy
+    .container
+      .content.animated.fadeIn.delay-content
+        h3 Your information
+        p
+          i  Registration information.
+          |  When you sign up for MySQUAR applications, you will be required to provide us some
+          |         personal information such as your name and email address. Once you register, you can go to your profile at any time
+          |         to add more information about yourself, such as your date of birth, phone number or avatar. Your avatar and your
+          |         MySQUAR name are publicly displayed.
+        p
+          i  User activity and personal information.
+          |  We collect information whenever you have any interaction with MySQUAR
+          |         applications. This may include the time, date, type of activity (such as creating, sharing or replying to a post)
+          |         or playing a game. Status, gender, location, friend list and age are also collected.
+        p
+          i  Public information.
+          | Other users may view your personal information such as username, avatar image, status,
+          |         gender, location, friend list, and age.
+        p
+          i Technical information.
+          |  We collect technical information about the device, operating system and browser you
+          |         use.
+        h3 Information sharing and disclosure
+        p
+          i Sharing information.
+          |  MySQUAR does not rent, sell or share personal information with other people or third parties
+          |         without your permission.
+        p
+          i  Third parties.
+          | When we have your permission, we may provide the information to trusted partners who work with
+          |         MySQUAR under confidentiality agreements. These companies may use your personal information to assist MySQUAR to
+          |         help improve or promote our services. However, these companies do not have any independent right to share or use
+          |         this information.
+        p
+          i  Law and Harm.
+          |  We believe that it is necessary to share your information if there is any request from legal
+          |         authorities to investigate, prevent, or take action regarding illegal activities, suspected fraud, situations involving
+          |         potential threats to the physical safety of any person or violations of MySQUAR’s terms of use.
+        h3 How we use your information
+        p
+          | We use the information we collect to monitor and improve the services and features we provide to you.
+        p
+          | We use the information we collect to prevent potentially illegal activities and terminate permanently any illegal actions.
+        p
+          | We use the information we collect to contact you with service-related announcements or send you update notifications
+          | from time to time.
+        p
+          | We may close your account if we receive a formal request from you or other proper legal request to do so.
+        p
+          i  Viewing, Changing or Removing Information.
+          |  You can view, edit or delete information in your profile at any
+          |         time. The update takes effect immediately. You can delete your account by sending a request to our customer support.
+        p
+          i  Limitations on removal.
+          |  When you delete your account or remove some information from your profile, that information
+          |         may still exist on other users’ profiles if others were tagged in the post or it was shared with others.
+        h3 Changes to this policy
+        p
+          | MySQUAR may update this policy from time to time. We will notify you about changes by sending a notice to the email
+          | you registered with us.
+    footer.product-footer
+      span © 2017 SQUAR PTE LTD. All Rights Reserved.
+    script.
+      var isGame = true;
+    script(src=assetPath('jquery.min.js'))
+    script(src=assetPath('base-sidenav.js'))

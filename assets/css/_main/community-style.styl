@@ -1,0 +1,107 @@
+* {
+  font-family: 'GillSans';
+}
+
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 56px;
+  height: 56px;
+  z-index: 10;
+}
+
+.header {
+  width: 100%;
+  box-sizing: border-box;
+  height: 280px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.community {
+  background-image: url('img/common/banner/community.jpg');
+  background-size: cover;
+}
+
+.privacy {
+  background-image: url('img/common/banner/privacy.jpg');
+  background-size: cover;
+}
+
+.terms {
+  background-image: url('img/common/banner/terms.jpg');
+  background-size: cover;
+}
+
+.header .title {
+  font-size: 42px;
+  font-weight: 600;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 32px 20px;
+}
+
+.content {
+  width: 806px;
+  margin: auto;
+  font-size: 24px;
+}
+
+.content p {
+  opacity: 0.7;
+  font-weight: 100;
+  line-height: 24px;
+  font-size: 18px;
+}
+
+.content h3 {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.product-footer {
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: #1e384f;
+}
+
+.product-footer span {
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.delay-title {
+  animation-delay: 0.3s;
+}
+
+.delay-content {
+  animation-delay: 0.5s;
+}
+
+@media (max-width: 850px) {
+  .content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .breadcrum-container {
+    display: none;
+  }
+
+  .title {
+    padding-top: 40px;
+  }
+}

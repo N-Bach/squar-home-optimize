@@ -1,0 +1,141 @@
+doctype html
+html(lang='en')
+  head
+    title MYSQUAR - Connecting Myanmar
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', type='text/css', href='/css/vendor/animate.min.css')
+    link(rel='stylesheet', type='text/css', href='/css/base-sidenav.css')
+    link(rel='stylesheet', type='text/css', href='/css/detail/callhome.css')
+    link(rel='stylesheet', type='text/css', href='/css/detail/fastsell.css')
+    link(rel='shortcut icon', href='/img/icon/favicon.ico')
+  body
+    a(href='/')
+      img.logo.pointer.animated.fadeInLeft(src='/img/icon/Logo-Mysquar.png', alt='logo')
+    span#hamburger.pointer.animated.fadeInRight(onclick='openNav()')
+      img#ic-hamburger(src='/img/icon/ic-menu.png', alt='sidenav')
+    #mySidenav.sidenav
+      img.closebtn.pointer(src='/img/icon/ic-close.png', alt='Close', onclick='closeNav()')
+      .page-link
+        a(href='/products')
+          span Our Products
+        a(href='https://careers.mysquar.com/', target='_blank')
+          span We Are Hiring
+        a(href='http://investors.mysquar.com/', target='_blank')
+          span For Investors
+        a(href='/contactus ')
+          span Contact Us
+      footer
+        .social-link
+          a(href='https://twitter.com/mysquar', target='_blank')
+            img(src='/img/icon/ic-twitter.png', alt='twitter')
+          a(href='https://www.linkedin.com/company/squar-asia', target='_blank')
+            img(src='/img/icon/ic-linkedin.png', alt='linked')
+          a(href='https://www.youtube.com/channel/UChv63ZLGBBQERh2Kz4T84Iw', target='_blank')
+            img(src='/img/icon/ic-youtube.png', alt='youtube')
+        span © 2017 SQUAR PTE LTD. All Rights Reserved
+    .breadcrum-container.animated.fadeIn
+      ul.breadcrumb
+        li
+          a(href='/')
+            img.ic-home(src='/img/icon/ic-home-white.png', alt='Home')
+        li
+          a(href='/products') OUR PRODUCTS
+        li FASTSELL
+    #fastsell-bg.header.animated.fadeIn
+      .content
+        // <div class="hero half"></div>
+        #fastsell-hero.hero.animated.fadeInLeft.delay-hero
+        .intro.animated.fadeInRight.delay-intro
+          .logo-mychat.mg-bottom-8
+            img(src='/img/detail/fastsell/logo.png', alt='logo-fastsell', height='80px', width='80px')
+          .name.mg-bottom-8
+            | FastSell
+          .description.mg-bottom-26
+            | A peer-to-peer marketplace, allowing people to trade with others nearby.
+          .app-link.mg-bottom-26
+            button.apk(onclick="window.open('https://fastsell.com.mm/apk_download/app-production-release.apk','_blank')")
+              img(src='/img/icon/ic-download.png', alt='Download APK')
+              |  APK Download
+            button.google-play(onclick=" window.open('https://play.google.com/store/apps/details?id=vn.fastsell.app.mm','_blank')")
+              img(src='/img/icon/btt-google.png', alt='Get CallHome in Google Play')
+          .follow
+            | Follow us on
+            a(href='https://www.facebook.com/FastSellMyanmar/', target='_blank')
+              img(src='/img/icon/if-fb-white.png', alt='CallHome FB page', width='24px', height='24px')
+    .container
+      section#overview.bg-grey.section-padding
+        .content
+          .half.is-animated-left.delay-overview
+            .text
+              .wrapper.maxwidth-overview
+                .title
+                  | fast sales, quick cash.
+                .body
+                  | An easy to use mobile marketplace to buy and sell new or used items nearby. Contact buyers and sellers directly to bargain
+                  | and conduct quick transactions. Totally FREE to sign up, list or buy with a simple registration process.
+                  | Download the FastSell app and enjoy the convenience of having a nearby flea market on your smartphone!
+          .half.is-animated-right.delay-overview
+            .mockup
+              img(src='/img/detail/fastsell/mockup-overview.png', alt='fastsell-overview')
+      section#feature.section-padding
+        #special-content-reverse.content
+          .half.is-animated-left
+            .mockup
+              img(src='/img/detail/fastsell/mockup-feature-1.png', alt='fastsell-overview')
+          .half.is-animated-right
+            .text
+              .wrapper.maxwidth-feature
+                .title
+                  | earn cash easily.
+                .body
+                  | -Earn extra cash by simply taking a photo of the item with your phone and posting it for sale in less than a minute.
+                  br
+                  |                 -Sell new or used items that are cluttering up your home!
+                  br
+                  |  -Expand your business by adding another sales
+                  |                 channel.
+                  br
+      section#update.bg-grey.section-padding
+        .content
+          .half.is-animated-left
+            .text
+              .wrapper.maxwidth-update
+                .title
+                  | diverse product offering.
+                .body
+                  | -A wide range of new and used items, FastSell has it all!
+                  br
+                  |  -Find cars, electronics, fashion, accessories,
+                  |                 handmade goods and even more.
+                  br
+                  |  -Discover items you've been searching for at reduced prices!
+                  br
+          .half.is-animated-right
+            .mockup
+              img(src='/img/detail/fastsell/mockup-feature-2.png', alt='fastsell-overview')
+      section#feature2.section-padding
+        #special-content-reverse.content
+          .half.is-animated-left
+            .mockup
+              img(src='/img/detail/fastsell/mockup-feature-3.png', alt='fastsell-overview')
+          .half.is-animated-right
+            .text
+              .wrapper.maxwidth-feature
+                .title
+                  | safe shopping environment.
+                .body
+                  | -See the profile of who you are transacting with.
+                  br
+                  |  -The FastSell team monitors all listings and activity
+                  |                 daily and removes any inappropriate content or users.
+                  br
+                  br
+    footer.product-footer.animated.fadeIn.delay-foot
+      span © 2017 SQUAR PTE LTD. All Rights Reserved.
+    script.
+      var isGame = true;
+    script(type='text/javascript ', src='/js/vendor/jquery.min.js ')
+    script(type='text/javascript ', src='/js/vendor/jquery.viewportchecker.min.js')
+    script(type='text/javascript ', src='/js/base-sidenav.js ')
+    script(type='text/javascript ', src='/js/detail/animation.js ')

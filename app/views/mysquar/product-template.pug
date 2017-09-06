@@ -1,0 +1,65 @@
+doctype html
+html(lang='en')
+  head
+    title MYSQUAR - Connecting Myanmar
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', type='text/css', href='/css/vendor/animate.min.css')
+    link(rel='stylesheet', type='text/css', href='/css/base-sidenav.css')
+    // <link rel="stylesheet" type="text/css" href="css/detail/mychat.css">
+    // <link href="css/products-style.css" rel="stylesheet">
+    link(rel='shortcut icon', type='image/png', href='/img/icon/favicon.ico')
+  body(style='background-color: green')
+    a(href='/')
+      img.logo.pointer.animated.fadeInLeft(src='/img/icon/Logo-Mysquar.png', alt='logo')
+    span#hamburger.pointer.animated.fadeInRight(onclick='openNav()')
+      img#ic-hamburger(src='/img/icon/ic-menu.png', alt='sidenav')
+    #mySidenav.sidenav
+      img.closebtn.pointer(src='/img/icon/ic-close.png', alt='Close', onclick='closeNav()')
+      .page-link
+        a(href='/products')
+          span Our Products
+        a(href='https://careers.mysquar.com/')
+          span We Are Hiring
+        a(href='http://investors.mysquar.com/')
+          span For Investors
+        a(href='/contactus ')
+          span Contact Us
+      footer
+        .social-link
+          a(href='https://www.facebook.com/findmyhappyplace/', target='_blank')
+            img(src='/img/icon/ic-facebook.png', alt='fb')
+          a(href='https://twitter.com/mysquar', target='_blank')
+            img(src='/img/icon/ic-twitter.png', alt='twitter')
+          a(href='https://www.linkedin.com/company/squar-asia', target='_blank')
+            img(src='/img/icon/ic-linkedin.png', alt='linked')
+          a(href='https://www.youtube.com/channel/UChv63ZLGBBQERh2Kz4T84Iw', target='_blank')
+            img(src='/img/icon/ic-youtube.png', alt='youtube')
+        span © 2017 SQUAR PTE LTD. All Rights Reserved
+    .breadcrum-container.animated.fadeIn
+      ul.breadcrumb
+        li
+          a(href='/')
+            img.ic-home(src='/img/icon/ic-home-white.png', alt='Home')
+        li
+          a(href='/products') OUR PRODUCTS
+        li MYCHAT
+    .header.animated.fadeIn
+    #nav.tabs.animated.fadeIn.delay-nav
+      .tab-button
+        div
+          button#defaultOpen.tablinks(onclick="openTab(event, 'overview')") OVERVIEW
+        div
+          button.tablinks(onclick="openTab(event, 'feature')") FEATURE
+        div
+          button.tablinks(onclick="openTab(event, 'update')") UPDATE
+    .container(style='width: 100%; height: 1000px')
+      #overview.tabcontent overview
+      #feature.tabcontent feature
+      #update.tabcontent update
+    footer.product-footer
+      span © 2017 SQUAR PTE LTD. All Rights Reserved.
+    script(type='text/javascript ', src='/js/vendor/jquery.min.js ')
+    script(type='text/javascript ', src='/js/base-sidenav.js ')
+    // <script type="text/javascript " src="js/detail/mychat.js "></script>
+    // <script type="text/javascript " src="js/products-index.js "></script>

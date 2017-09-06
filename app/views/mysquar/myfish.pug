@@ -1,0 +1,112 @@
+doctype html
+html(lang='en')
+  head
+    title MYSQUAR - Connecting Myanmar
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', type='text/css', href='/css/vendor/animate.min.css')
+    link(rel='stylesheet', type='text/css', href='/css/base-sidenav.css')
+    link(rel='stylesheet', type='text/css', href='/css/detail/lom.css')
+    link(rel='stylesheet', type='text/css', href='/css/detail/myfish.css')
+    link(rel='shortcut icon', href='/img/icon/favicon.ico')
+  body
+    a(href='/')
+      img.logo.pointer.animated.fadeInLeft(src='/img/icon/Logo-Mysquar.png', alt='logo')
+    span#hamburger.pointer.animated.fadeInRight(onclick='openNav()')
+      img#ic-hamburger(src='/img/icon/ic-menu.png', alt='sidenav')
+    #mySidenav.sidenav
+      img.closebtn.pointer(src='/img/icon/ic-close.png', alt='Close', onclick='closeNav()')
+      .page-link
+        a(href='/products')
+          span Our Products
+        a(href='https://careers.mysquar.com/', target='_blank')
+          span We Are Hiring
+        a(href='http://investors.mysquar.com/', target='_blank')
+          span For Investors
+        a(href='/contactus ')
+          span Contact Us
+      footer
+        .social-link
+          a(href='https://twitter.com/mysquar', target='_blank')
+            img(src='/img/icon/ic-twitter.png', alt='twitter')
+          a(href='https://www.linkedin.com/company/squar-asia', target='_blank')
+            img(src='/img/icon/ic-linkedin.png', alt='linked')
+          a(href='https://www.youtube.com/channel/UChv63ZLGBBQERh2Kz4T84Iw', target='_blank')
+            img(src='/img/icon/ic-youtube.png', alt='youtube')
+        span © 2017 SQUAR PTE LTD. All Rights Reserved
+    .breadcrum-container.animated.fadeIn
+      ul.breadcrumb
+        li
+          a(href='/')
+            img.ic-home(src='/img/icon/ic-home-white.png', alt='Home')
+        li
+          a(href='/products') OUR PRODUCTS
+        li MYFISH
+    #myfish-bg.header.animated.fadeIn
+      .content
+        // <div class="hero half"></div>
+        #myfish-hero.hero.animated.fadeInLeft.delay-hero
+        .intro.animated.fadeInRight.delay-intro
+          // <div class="intro half">
+          .logo-lom.mg-bottom-8
+            img(src='/img/detail/myfish/logo.png', alt='logo-myfish')
+          .name.mg-bottom-8
+            | MyFish
+          .description.mg-bottom-26
+            | Do you want to reign over the ocean water? Come play MyFish, this game will make your dream a reality. Enter an enchanting
+            | underwater world full of fish, sea animals and mermaids!
+          .app-link.mg-bottom-26
+            button.apk(onclick="window.open('http://tracking.squargame.com/download.php?game=myfish&utm_source=Landing_APK','_blank')")
+              img(src='/img/icon/ic-download.png', alt='Download APK')
+              |  APK Download
+            button.google-play(onclick=" window.open('https://play.google.com/store/apps/details?id=com.mygame.myfish&referrer=utm_source%3DLanding_GP','_blank')")
+              img(src='/img/icon/btt-google.png', alt='Get MyFish in Google Play')
+            button.app-store(onclick=" window.open('https://itunes.apple.com/us/app/myfishmm/id1136092706','_blank')")
+              img(src='/img/icon/btt-appstore.png', alt='Get MyFish in App Store')
+          .follow
+            | Follow us on
+            a(href='https://www.facebook.com/myfishmm/', target='_blank')
+              img(src='/img/icon/if-fb-white.png', alt='MyFish FB page', width='24px', height='24px')
+            span
+              | Website:
+              a(href='http://myfishmm.com', target='_blank') myfishmm.com
+    .container
+      #overview.content.bg-dark.reverse
+        .text.is-animated-left
+          .wrapper
+            .title
+              | overview.
+            .body
+              | MyFish has over 30 varieties of rare and colourful fish, stunning underwater graphics, music and sound effects for an enjoyable
+              | experience. Catch fish and fight bosses to earn gold coins. MyFish is also the first game in Myanmar where you
+              | can exchange gold coins from the game into real rewards for mobile top-up cards. This fish hunting game is unlike
+              | any experience that you’ve ever had before. Let’s go catch some fish!
+        .mockup.pd-left-52.is-animated-right
+          img(src='/img/detail/myfish/mockup-overview.png', alt='myfish-overview')
+      // end of overview
+      #feature.content.pd-bottom-32.bg-dark
+        .mockup.pd-right-52.justify-end.is-animated-left
+          img(src='/img/detail/myfish/mockup-features.png', alt='myfish-features')
+        .text-start.is-animated-right
+          #myfish-maxwidth.wrapper
+            .title
+              | key features.
+            .body
+              ul
+                li Win mobile top-up cards every hour
+                li New Fish and new bosses constantly added
+                li Kill bosses and win up to 2,000,000 in gold coins
+                li Play in the VIP room for special bonuses
+                li Play Lucky Spin for the chance to win up to 750x
+                li Earn enough gold coins to get unlimited time to claim rewards
+                li Lightweight data transfer requirements
+      // end of feature
+    // end of container
+    footer.product-footer.animated.fadeIn.delay-foot
+      span © 2017 SQUAR PTE LTD. All Rights Reserved.
+    script.
+      var isGame = true;
+    script(type='text/javascript ', src='/js/vendor/jquery.min.js ')
+    script(type='text/javascript ', src='/js/vendor/jquery.viewportchecker.min.js')
+    script(type='text/javascript ', src='/js/base-sidenav.js ')
+    script(type='text/javascript ', src='/js/detail/lom.js ')

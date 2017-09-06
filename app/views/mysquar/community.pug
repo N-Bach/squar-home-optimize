@@ -1,0 +1,88 @@
+doctype html
+html(lang='en')
+  head
+    title MYSQUAR Community Standards
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(href=assetPath('animate.min.css'), rel='stylesheet')
+    link(href=assetPath('base-sidenav.css'), rel='stylesheet')
+    link(href=assetPath('community-style.css'), rel='stylesheet')
+  body
+    a(href='/')
+      img.logo.animated.fadeInLeft(src=assetPath('img/common/icon/Logo-Mysquar.png'), alt='logo')
+    span#hamburger.pointer.animated.fadeInRight(onclick='openNav()')
+      img#ic-hamburger(src=assetPath('/img/common/icon/ic-menu.png'), alt='sidenav')
+    #mySidenav.sidenav
+      img.closebtn.pointer(src=assetPath('/img/common/icon/ic-close.png'), alt='Close', onclick='closeNav()')
+      .page-link
+        a(href='/products')
+          span Our Products
+        a(href='https://careers.mysquar.com/', target='_blank')
+          span We Are Hiring
+        a(href='http://investors.mysquar.com/', target='_blank')
+          span For Investors
+        a(href='/contactus ')
+          span Contact Us
+      footer
+        .social-link
+          a(href='https://twitter.com/mysquar', target='_blank')
+            img(src=assetPath('/img/common/icon/ic-twitter.png'), alt='twitter')
+          a(href='https://www.linkedin.com/company/squar-asia', target='_blank')
+            img(src=assetPath('/img/common/icon/ic-linkedin.png'), alt='linked')
+          a(href='https://www.youtube.com/channel/UChv63ZLGBBQERh2Kz4T84Iw', target='_blank')
+            img(src=assetPath('/img/common/icon/ic-youtube.png'), alt='youtube')
+        span © 2017 SQUAR PTE LTD. All Rights Reserved
+    .header.community.animated.fadeIn
+      .breadcrum-container.animated.fadeIn
+        ul.breadcrumb
+          li
+            a(href='/')
+              img.ic-home(src=assetPath('img/common/icon/ic-home-white.png'), alt='Home')
+          li
+            a(href='/contactus') CONTACT US
+          li COMMUNITY STANDARDS
+      .title.animated.fadeIn.delay-title Community Standards
+    .container
+      .content.animated.fadeIn.delay-content
+        p
+          | Our mission at MySQUAR is to connect the people of Myanmar through consumer technology. We want to facilitate the creation
+          | and sharing of information and ideas through a broad, accessible and authentic online experience.
+        p
+          | Providing a balance between free expression and the needs of a diverse public are important to ensure a happy community.
+          | With that in mind, we’ve created the following community standards to help shape what sort of content is acceptable
+          | and what content may be reported or removed.
+        h3 Violence, Bullying and Threats
+        p
+          | We aim to keep our channels free of any online violence, bullying, threats or abuse on our platform. We will take action
+          | to report or remove any behaviour that we perceive to be endorsing physical harm, or a threat to public safety.
+        h3 Hate Speech
+        p
+          | We strive to make a distinction between satire and humorous expression and serious speech. Attacks based on race, ethnicity,
+          | national origin, sex, gender, sexual orientation, disabilities or medical conditions may be reported or removed.
+        h3 Graphic Content
+        p
+          | We expect that people who share content on our platform should do so in a responsible manner. If inappropriate content
+          | is shared in a public manner it may be reported or removed. This includes both graphic violence and content of a
+          | pornographic nature.
+        h3 Intellectual Property
+        p
+          | Before sharing content on our platforms, please be sure you have the rights to do so. Please respect copyrights, trademarks,
+          | and other legal rights.
+        h3 Phishing and Spam
+        p
+          | We ask that you refrain from contacting users for commercial purposes without prior consent.
+        h3 Security
+        p
+          | Privacy and security is something we take seriously. We work to keep your information secure from outsiders.
+        h3 Reporting Abuse
+        p
+          | If you see something on any MySQUAR product that you believe violates these standards, you should report it to us.
+          | Please keep in mind that reporting a piece of content does not guarantee that it will be removed from the site. Because
+          | of the diversity of our community, it's possible that something could be disagreeable or disturbing to you without
+          | meeting the criteria for being removed or blocked. For this reason, we also offer the ability to block users.
+    footer.product-footer
+      span © 2017 SQUAR PTE LTD. All Rights Reserved.
+    script.
+      var isGame = true;
+    script(src=assetPath('jquery.min.js'))
+    script(src=assetPath('base-sidenav.js'))

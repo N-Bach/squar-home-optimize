@@ -1,0 +1,114 @@
+doctype html
+html(lang='en')
+  head
+    title MYSQUAR - Connecting Myanmar
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', type='text/css', href='/css/vendor/animate.min.css')
+    link(rel='stylesheet', type='text/css', href='/css/base-sidenav.css')
+    link(rel='stylesheet', type='text/css', href='/css/detail/lom.css')
+    link(rel='stylesheet', type='text/css', href='/css/detail/myhero.css')
+    link(rel='shortcut icon', href='/img/icon/favicon.ico')
+  body
+    a(href='/')
+      img.logo.pointer.animated.fadeInLeft(src='/img/icon/Logo-Mysquar.png', alt='logo')
+    span#hamburger.pointer.animated.fadeInRight(onclick='openNav()')
+      img#ic-hamburger(src='/img/icon/ic-menu.png', alt='sidenav')
+    #mySidenav.sidenav
+      img.closebtn.pointer(src='/img/icon/ic-close.png', alt='Close', onclick='closeNav()')
+      .page-link
+        a(href='/products')
+          span Our Products
+        a(href='https://careers.mysquar.com/', target='_blank')
+          span We Are Hiring
+        a(href='http://investors.mysquar.com/', target='_blank')
+          span For Investors
+        a(href='/contactus ')
+          span Contact Us
+      footer
+        .social-link
+          a(href='https://twitter.com/mysquar', target='_blank')
+            img(src='/img/icon/ic-twitter.png', alt='twitter')
+          a(href='https://www.linkedin.com/company/squar-asia', target='_blank')
+            img(src='/img/icon/ic-linkedin.png', alt='linked')
+          a(href='https://www.youtube.com/channel/UChv63ZLGBBQERh2Kz4T84Iw', target='_blank')
+            img(src='/img/icon/ic-youtube.png', alt='youtube')
+        span © 2017 SQUAR PTE LTD. All Rights Reserved
+    .breadcrum-container.animated.fadeIn
+      ul.breadcrumb
+        li
+          a(href='/')
+            img.ic-home(src='/img/icon/ic-home-white.png', alt='Home')
+        li
+          a(href='/products') OUR PRODUCTS
+        li MY HERO
+    #myhero-bg.header.animated.fadeIn
+      .content
+        // <div class="hero half"></div>
+        #myhero-hero.hero.animated.fadeInLeft.delay-hero
+        .intro.animated.fadeInRight.delay-intro
+          // <div class="intro half">
+          .logo-lom.mg-bottom-8
+            img(src='/img/detail/myhero/logo.png', alt='logo-myhero')
+          .name.mg-bottom-8
+            | My Hero - Bo Lattae
+          .description.mg-bottom-26
+            | One of the very first RPS games in Myanmar featuring a variety of well known Heroes within an adventurous fantasy world.
+          .app-link.mg-bottom-26
+            button.apk(onclick="window.open('http://tracking.squargame.com/download.php?game=myHero&utm_source=LD_APK','_blank')")
+              img(src='/img/icon/ic-download.png', alt='Download APK')
+              |  APK Download
+            button.google-play(onclick=" window.open('https://play.google.com/store/apps/details?id=com.mygame.myhero&referrer=utm_source%3DLD_GP','_blank')")
+              img(src='/img/icon/btt-google.png', alt='Get MyHero in Google Play')
+            button.app-store(onclick=" window.open('https://itunes.apple.com/us/app/myhero-bo-lattae/id1240309813?ls=1&mt=8','_blank')")
+              img(src='/img/icon/btt-appstore.png', alt='Get MyHero in App Store')
+          .follow
+            | Follow us on
+            a(href='https://www.facebook.com/MyheroBoLattae/', target='_blank')
+              img(src='/img/icon/if-fb-white.png', alt='MyHero FB page', width='24px', height='24px')
+            span
+              | Website:
+              a(href='http://myheromm.com/', target='_blank') myheromm.com
+    .container
+      #overview.content.bg-dark.reverse
+        .text.is-animated-left
+          .wrapper
+            .title
+              | overview.
+            .body
+              | The game offers an adventurous fantasy world, complex fighting combinations and massive explosions, topped off with ultimate
+              | retaliation skills and epic animations. Join thousands of players in this exciting adventure. It’s easy to play!
+              | You won't stop shooting!
+        .mockup.pd-left-52.is-animated-right
+          img(src='/img/detail/myhero/mockup-overview.png', alt='myhero-overview')
+      // end of overview
+      #feature.content.pd-bottom-32.bg-dark
+        .mockup.pd-right-52.justify-end.is-animated-left
+          img(src='/img/detail/myhero/mockup-features.png', alt='myhero-overview')
+        .text-start.is-animated-right
+          .wrapper
+            .title
+              | key features.
+            .body
+              ul
+                li Transform into over 100 of your favourite heroes.
+                li Beautiful chibi graphics, live dubbing.
+                li Four categories of skilled characters.
+                li A unique combination between a RPG (role-playing game) and third-person shooter.
+                li Invite your friends to play - fight against Bosses or fight against each other.
+                li Real PvP (player versus player) battles.
+                li Summon friends to assist you in battle.
+                li Create a clan/guild and invite other players to join.
+                li Hundreds of weapons and armour sets for your heroes.
+                li Unique system ranking challenges.
+                li Choose from numerous skilled pets for additional protection.
+      // end of feature
+    // end of container
+    footer.product-footer.animated.fadeIn.delay-foot
+      span © 2017 SQUAR PTE LTD. All Rights Reserved.
+    script.
+      var isGame = true;
+    script(type='text/javascript ', src='/js/vendor/jquery.min.js ')
+    script(type='text/javascript ', src='/js/vendor/jquery.viewportchecker.min.js')
+    script(type='text/javascript ', src='/js/base-sidenav.js ')
+    script(type='text/javascript ', src='/js/detail/lom.js ')

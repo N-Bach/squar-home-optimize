@@ -1,0 +1,13 @@
+doctype html
+html(lang='en')
+  head
+    title= 'Test'
+    meta(charset='UTF-8')
+
+    link(href=assetPath('main.css'), rel='stylesheet')
+    script(src=assetPath('main.js'))
+  body
+    div.container
+      block body
+
+    include '../includes/ga'

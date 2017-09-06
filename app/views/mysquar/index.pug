@@ -1,0 +1,213 @@
+doctype html
+html(lang='en')
+  head
+    title MYSQUAR - Connecting Myanmar
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='twitter:card', content='summary')
+    meta(name='twitter:title', content='MySQUAR - Connecting Myanmar')
+    meta(name='twitter:description', content='MySQUAR is the first media and entertainment company focused solely on Myanmar incorporating local culture and language in all that we do.')
+    meta(name='twitter:image', content='https://preview-squar.herokuapp.com/img/common/icon/twitter-MySquar.jpg')
+    //- link(href=assetPath('main.css'), rel='stylesheet')
+    link(href=assetPath('jquery.fullpage.css'), rel='stylesheet')
+    link(href=assetPath('animate.min.css'), rel='stylesheet')
+    link(href=assetPath('style.css'), rel='stylesheet')
+    link(href=assetPath('style-responsive.css'), rel='stylesheet')
+  body
+    a(href='/')
+      img.logo.pointer.animated.fadeInLeft(src=assetPath('img/common/icon/Logo-Mysquar.png'), alt='logo')
+    span#hamburger.pointer.animated.fadeInRight(onclick='openNav()')
+      img#ic-hamburger(src=assetPath('img/common/icon/ic-menu.png'), alt='sidenav')
+    .scroll-indicator.animated.fadeInRight
+      img#scroll-down.pointer(src=assetPath('img/common/icon/ic-animated-scroll.gif'), alt='ic-scroll-down', onclick='scrollDown')
+      span#text-scroll-down.pointer(onclick='scrollDown') Scroll down
+    #mySidenav.sidenav
+      img.closebtn.pointer(src=assetPath('img/common/icon/ic-close.png'), alt='Close', onclick='closeNav()')
+      .page-link
+        a(href='/products')
+          span Our Products
+        a(href='https://careers.mysquar.com/', target='_blank')
+          span We Are Hiring
+        a(href='http://investors.mysquar.com/', target='_blank')
+          span For Investors
+        a(href='/contactus ')
+          span Contact Us
+      footer
+        .social-link
+          a(href='https://twitter.com/mysquar', target='_blank')
+            img(src=assetPath('img/common/icon/ic-twitter.png'), alt='twitter')
+          a(href='https://www.linkedin.com/company/squar-asia', target='_blank')
+            img(src=assetPath('img/common/icon/ic-linkedin.png'), alt='linked')
+          a(href='https://www.youtube.com/channel/UChv63ZLGBBQERh2Kz4T84Iw', target='_blank')
+            img(src=assetPath('img/common/icon/ic-youtube.png'), alt='youtube')
+        span © 2017 SQUAR PTE LTD. All Rights Reserved
+    .container
+      #fullpage
+        #section1.section(active='')
+          .hero
+            img.center-screen(src=assetPath('img/common/bg-circle.png'), alt='hero-background')
+            .slogan.animated.fadeInUp
+              #connect CONNECTING
+              #myanmar.squar-yellow MYANMAR
+            .scroll-down-small.animated.fadeIn
+              img(src=assetPath('img/common/icon/ic-animated-scroll.gif'), alt='ic-scroll-down', width='30px', onclick='scrollDown')
+              div(onclick='scrollDown') Scroll down
+        // end of section 1
+        #section2.section
+          .hero
+            .column
+              p.about-us-header.is-animated about us.
+              p.sub-header.is-animated
+                | MySQUAR is the first media and entertainment company focused solely on Myanmar incorporating local culture and language in
+                | all that we do. MySQUAR has established a diverse platform targeting mobile phone users in Myanmar with a large
+                | user base of over 7.5 million registered users as of January 2017.
+              .seperator.is-animated |
+              p.sub-p.is-animated
+                | The MySQUAR team is a group of dynamic, international and tech-savvy designers, developers and engineers. The Company is
+                | managed by a tech and financial-driven team with extensive experience in consumer technology development, operations
+                | management and finance. Executive management has been living and doing business in Asia for many years.
+              .about-us-pic.is-animated
+        // end of section 2
+        #section3.section
+          .hero
+            .column
+              .text
+                span.title.is-animated what we do.
+                .body.is-animated
+                  | MySQUAR is a leading consumer technology company created to enrich the lives of people through a broad, accessible and authentic
+                  | online experience.
+              .card-list
+                .card-row
+                  .card.is-animated
+                    .card-content
+                      img(src=assetPath('img/common/icon/ic-media.png'), alt='Media')
+                      p.content-title MEDIA
+                      p.content-body Connecting Myanmar through a social chat app and news aggregator.
+                  .card.is-animated
+                    .card-content
+                      img(src=assetPath('img/common/icon/ic-entertainment.png'), alt='Entertainment')
+                      p.content-title ENTERTAINMENT
+                      p.content-body Mobile game publisher of hardcore and casual games localised for Myanmar.
+                  .card.is-animated
+                    .card-content
+                      img(src=assetPath('img/common/icon/ic-fintech.png'), alt='Fintech')
+                      p.content-title FINTECH
+                      p.content-body Mobile app software development services for clients in the financial sector.
+                  .card.is-animated
+                    .card-content
+                      img(src=assetPath('img/common/icon/ic-mobile-money.png'), alt='Mobile Money')
+                      p.content-title MOBILE MONEY
+                      p.content-body Coming soon.
+                  .card.is-animated
+                    .card-content
+                      img(src=assetPath('img/common/icon/ic-voip.png'), alt='Voip')
+                      p.content-title VOIP
+                      p.content-body.narrow-letter
+                        | Crystal clear and stable voice calls to over 190+ countries using an internet connection.
+                  .card.is-animated
+                    .card-content
+                      img(src=assetPath('img/common/icon/ic-commerce.png'), alt='Commerce')
+                      p.content-title MOBILE COMMERCE
+                      p.content-body A location-based marketplace for new and used products and services in Myanmar.
+        // end of section 3
+        #section4.section
+          .hero
+            .column
+              .title.is-animated our products.
+              .body.is-animated
+                | MySQUAR is a leading media and entertainment company focused on bringing customised products that connect the
+                | people of Myanmar.
+              button.btn-explore.pointer.is-animated
+                a(href='/products') Explore
+              .seperator.is-animated - - - - - - - - - - - - - - - - - - - - -
+            .products
+              .navigator.is-animated
+                #nav-left.arrow.left.pointer
+                .product
+                  #pro-title.title MYCHAT
+                  #pro-des.descript V2.3.1 release in May 2017
+                #nav-right.arrow.right.pointer
+              .carousel-container.carousel.is-animated
+                img.app-pic(src=assetPath('img/common/products-screenshot/MyChat.png'), alt='Image 1')
+                img.app-pic(src=assetPath('img/common/products-screenshot/MinagalarbarMorning.png'), alt='Image 2')
+                img.app-pic(src=assetPath('img/common/products-screenshot/FastSell.png'), alt='Image 3')
+                img.app-pic(src=assetPath('img/common/products-screenshot/Callhome.png'), alt='Image 4')
+                img.app-pic(src=assetPath('img/common/products-screenshot/LOM.png'), alt='Image 5')
+                img.app-pic(src=assetPath('img/common/products-screenshot/MyHero.png'), alt='Image 6')
+                img.app-pic(src=assetPath('img/common/products-screenshot/LuckyWingabar.png'), alt='Image 7')
+                img.app-pic(src=assetPath('img/common/products-screenshot/HawkHero.png'), alt='Image 8')
+                img.app-pic(src=assetPath('img/common/products-screenshot/MyFish.png'), alt='Image 9')
+        // end of section 4
+        #section5.section
+          // <div class="hero sec5">
+          #hero-section-5.hero
+            .wrapper
+              .hiring-text
+                p.title.is-animated we are hiring.
+                p.body.is-animated
+                  | We are a group of dynamic, innovative and passionate individuals that utilise world-class technologies to build
+                  | premium products.
+                  br
+                  br
+                  | Come join the MySQUAR team!
+            .jobs
+              .row
+                .job-tile.is-animated
+                  img(src=assetPath('img/common/1.jpg'), alt='GAME DESIGNER')
+                  a(href='https://careers.mysquar.com/fullstack-javascript-nodejs-engineer-react/')
+                    span.job-title FULLSTACK ENGINEER
+                .job-tile.is-animated
+                  img(src=assetPath('img/common/2.jpg'), alt='ANDROID DEVELOPER')
+                  a(href='https://careers.mysquar.com/game-operator-platform/')
+                    span.job-title GAME OPERATOR
+              .row
+                .job-tile.is-animated
+                  img(src=assetPath('img/common/3.jpg'), alt='DATA ENGINEER')
+                  a(href='https://careers.mysquar.com/game-product-manager/')
+                    span.job-title
+                      | GAME PRODUCT
+                      br
+                      |  MANAGER
+                .job-tile.is-animated
+                  img(src=assetPath('img/common/4.jpg'), alt='SYSTEM ADMIN')
+                  a(href='https://careers.mysquar.com/php-engineer/')
+                    span.job-title PHP ENGINEER
+              .row
+                .job-tile.is-animated
+                  img(src=assetPath('img/common/5.jpg'), alt='DIGITAL CONTENT EXECUTIVE')
+                  a(href='https://careers.mysquar.com/product-marketing-manager/')
+                    span.job-title
+                      | PRODUCT MARKETING
+                      br
+                      |  MANAGER
+                .job-tile.is-animated
+                  img(src=assetPath('img/common/6.jpg'), alt='RUBY ON RAILS ENGINEER')
+                  a(href='https://careers.mysquar.com/marketing-manager-work-at-myanmar/')
+                    span.job-title
+                      | MARKETING MANAGER
+                      br
+                      |  (MYANMAR)
+              .row
+                .job-tile.is-animated
+                  img(src=assetPath('img/common/7.jpg'), alt='2 PRODUCT OWNERS')
+                  a(href='https://careers.mysquar.com/ruby-on-rails-engineer/')
+                    span.job-title
+                      | RUBY ON RAILS
+                      br
+                      |  ENGINEER
+                .see-more.is-animated
+                  a.see-more-text(href='https://careers.mysquar.com/')
+                    span See more...
+            .scroll-small
+              .container
+                img(src=assetPath('img/common/icon/bk_top_blk.gif'), alt='ic-back-to-top', onclick='topFunction()')
+                div(onclick='topFunction()') Back to top
+        // end of section 5
+    script.
+      var isGame = false;
+    script(src=assetPath('jquery.min.js'))
+    script(src=assetPath('jquery.fullpage.js'))
+    script(src=assetPath('waterwheelCarousel.js'))
+    script(src=assetPath('base-sidenav.js'))
+    script(src=assetPath('index.js'))
+

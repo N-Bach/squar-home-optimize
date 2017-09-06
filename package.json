@@ -1,0 +1,90 @@
+{
+  "name": "asset-pipeline",
+  "license": "MIT",
+  "scripts": {
+    "test":
+      "NODE_ENV=test mocha -t 100000 --compilers js:babel-register --plugins add-module-exports --require test/init.js test/*.spec.js",
+    "test:watch": "NODE_ENV=test nodemon --exec yarn test --watch test",
+    "test:cov": "NODE_ENV=test nyc --reporter=lcov --reporter=text yarn test",
+    "dev": "gulp dev",
+    "clean": "gulp clean",
+    "prebuild": "rimraf dist",
+    "build:server": "babel -d dist index.js app/*.js app/**/*.js --copy-files",
+    "build:client":
+      "NODE_ENV=production gulp build --in assets --out dist/public/assets --getAssetPathFile dist/app/utils/assetPath.js",
+    "build": "yarn run build:server && yarn run build:client",
+    "postbuild":
+      "rimraf node_modules && yarn install --production && cp -R node_modules config dist && cp public/favicon.png dist/public/favicon.png && cp -R app/views dist/app/views",
+    "start": "cd dist && node index",
+    "sprite": "gulp sprite",
+    "imagemin": "gulp imagemin"
+  },
+  "dependencies": {
+    "body-parser": "1.17.2",
+    "config": "1.26.2",
+    "express": "4.15.4",
+    "helmet": "3.8.1",
+    "method-override": "2.3.9",
+    "pug": "2.0.0-rc.3",
+    "serve-favicon": "2.4.3"
+  },
+  "devDependencies": {
+    "gulp-include": "^2.3.1",
+    "babel-cli": "6.24.1",
+    "babel-plugin-istanbul": "4.1.4",
+    "babel-preset-env": "1.6.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-es2016": "6.24.1",
+    "babel-preset-es2017": "6.24.1",
+    "babel-preset-stage-0": "6.24.1",
+    "babel-register": "6.24.1",
+    "chai": "4.1.1",
+    "eslint": "4.4.1",
+    "eslint-config-airbnb-base": "11.3.1",
+    "eslint-plugin-import": "2.7.0",
+    "gulp": "3.9.1",
+    "gulp-autoprefixer": "4.0.0",
+    "gulp-babel": "7.0.0",
+    "gulp-clean-css": "3.7.0",
+    "gulp-concat": "2.6.1",
+    "gulp-if": "2.0.2",
+    "gulp-imagemin": "3.3.0",
+    "gulp-load-plugins": "1.5.0",
+    "gulp-modify-css-urls": "0.2.2",
+    "gulp-nodemon": "2.2.1",
+    "gulp-rcs": "1.1.0",
+    "gulp-revision": "1.0.0",
+    "gulp-rimraf": "0.2.1",
+    "gulp-sequence": "0.4.6",
+    "gulp-sourcemaps": "2.6.0",
+    "gulp-stylus": "2.6.0",
+    "gulp-uglify": "3.0.0",
+    "gulp.spritesmith": "6.5.1",
+    "js-yaml": "^3.9.1",
+    "merge-stream": "1.0.1",
+    "mocha": "3.5.0",
+    "nyc": "11.1.0",
+    "rimraf": "2.6.1",
+    "through2": "2.0.3",
+    "yargs": "8.0.2"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ],
+    "sourceMaps": true,
+    "retainLines": true,
+    "env": {
+      "test": {
+        "plugins": ["istanbul"]
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.DS_Store
+.project
+.idea
+nbproject
+.settings
+node_modules
+dist
+coverage
+logs/*.log
+logs/*.log.*
+.nyc_output
+npm-debug.log
+.scannerwork
+package-lock.json
+dump.rdb
+public/assets
+app/utils/assetPath.js

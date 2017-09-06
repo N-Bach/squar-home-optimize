@@ -1,0 +1,561 @@
+body {
+  margin: 0;
+}
+
+#hamburger {
+  position: fixed;
+  top: 38px;
+  right: 38px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.tabcontent {
+  display: none;
+}
+
+.breadcrum-container {
+  position: absolute;
+  top: 30px;
+  left: 153px;
+  z-index: 10;
+  /* height: 50px; */
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 0;
+  list-style: none;
+  font-size: 17px;
+  margin: auto;
+}
+
+ul.breadcrum .ic-home {
+  width: 23px;
+  height: 20px;
+  display: inline-block;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  float: left;
+  line-height: 24px;
+  font-family: 'GillSans-SemiBold';
+}
+
+ul.breadcrumb li img {
+  vertical-align: center;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li + li:before {
+  padding: 0 8px;
+  content: url('../img/icon/ic-arrow-white.png'); /* with class ModalCarrot ??*/
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #e4b315;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 110; /* Stay on top */
+  top: 0;
+  right: 0;
+  /* background-color: #111;  Black */
+  background-image: url('../img/bg.jpg');
+  background-size: 100% 100%;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  /* padding-top: 60px;  Place content 60px from the top  */
+  transition: 0.2s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav .page-link a {
+  text-decoration: none;
+  /* color: #818181; */
+  color: white;
+  font-size: 40px;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .page-link a span {
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav .page-link a:hover,
+.offcanvas .page-link a:focus {
+  border-left: 6px solid white;
+}
+
+.sidenav .page-link a span:hover,
+.offcanvas .page-link a span:focus {
+  opacity: 0.6;
+}
+
+.sidenav .page-link a.active {
+  opacity: 0.6;
+  pointer-events: none;
+  cursor: default;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  font-size: 36px;
+  margin-left: 50px;
+  top: 38px;
+  right: 40px;
+  cursor: pointer;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+#mySidenav footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 16px;
+}
+
+#mySidenav .social-link {
+  padding: 8px 16px;
+}
+
+#mySidenav .social-link a {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  transition: 0.2s;
+}
+
+#mySidenav .social-link a:hover {
+  opacity: 0.6;
+}
+
+#mySidenav .social-link img {
+  margin-right: 4px;
+  height: 32px;
+  width: 32px;
+}
+
+#mySidenav footer span {
+  color: white;
+  font-size: 14px;
+  margin: 8px 16px;
+}
+
+#mySidenav .page-link {
+  margin-top: 130px;
+}
+
+#mySidenav .page-link a {
+  padding: 8px 8px 16px 32px;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 56px;
+  height: 56px;
+  z-index: 10;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 310px;
+  background-image: url('../img/bg-products.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header .text {
+  margin: 154px auto 18px auto;
+  display: flex;
+  bottom: 40px;
+  flex-direction: column;
+}
+
+.header .text .title {
+  font-size: 64px;
+  font-weight: 600;
+  letter-spacing: 2.1px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 3px;
+  font-family: 'GillSans-SemiBold';
+}
+
+.header .text .body {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 0.6px;
+  text-align: center;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'GillSans-Light';
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  box-shadow: 0 2px 8px 0 rgba(188, 204, 217, 0.25);
+}
+
+.sticky-crumb {
+  position: fixed;
+  top: 16px;
+  left: 32px;
+  z-index: 10;
+}
+
+.sticky-crumb ul li {
+  color: #1e384f;
+}
+
+.sticky-crumb ul li a {
+  color: #1e384f;
+}
+
+.sticky-crumb ul li + li:before {
+  content: url('../img/icon/ic-arrow.png');
+}
+
+.sticky-sidenav {
+  position: fixed;
+  top: 18px !important;
+  right: 38px !important;
+}
+
+.tabs {
+  height: 56px;
+  width: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.tabs .tab-button {
+  font-size: 16px;
+  color: #1e384f;
+  text-align: center;
+  text-transform: uppercase;
+  align-items: center;
+  display: flex;
+}
+
+.tab-button button {
+  /* padding: 16px 0px; */
+  padding: 0px;
+  margin: 0 8px;
+  outline: 0;
+  border: none;
+  background: none;
+  font-size: 16px;
+  color: #1e384f;
+  transition: 0.2s;
+  height: 100%;
+  font-weight: 400;
+  cursor: pointer;
+  /* box-sizing: content-box; */
+}
+
+.tab-button button:hover {
+  color: #e4b315;
+}
+
+.tab-button span button.active {
+  border-bottom: 4px solid #e4b315;
+}
+
+.tab-button div {
+  height: 56px;
+  box-sizing: content-box;
+}
+
+.tab-button div button.active {
+  border-bottom: 4px solid #e4b315;
+}
+
+.tab-button button.active {
+  color: #e4b315;
+}
+
+.container {
+  width: 100%;
+  /* height: 1278px; */
+  padding: 32px 0 32px 0;
+  /* border: 2px solid red; */
+  /* display: flex; */
+  /* justify-content: center; */
+  background-image: url(../img/Bg-decoration.png);
+  background-repeat: no-repeat;
+  background-color: #f0f5f7;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.container .content {
+  /*height: 100%; */
+  width: 1048px;
+  /* border: 2px dashed blue; */
+  display: flex;
+  /* align-content: center; */
+  /* justify-content: space-around; */
+  /* flex-direction: column; */
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+.content .row {
+  /* height: 33%; */
+  /* width: 100%; */
+  padding: 8px 0px;
+  /* border: 2px solid green; */
+  /* display: flex; */
+  /* flex-direction: row; */
+  box-sizing: border-box;
+  /* align-items: center; */
+  justify-content: flex-start;
+}
+
+.content .row:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.content .row .card {
+  height: 418px;
+  width: 316px;
+  margin: 12px 10px;
+  /* border: 2px dashed pink; */
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 13px 0 rgba(168, 179, 188, 0.15);
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: 0.2s;
+  float: left;
+}
+
+.content .row .card:hover {
+  box-shadow: 6px 9px 20px 0 rgba(166, 184, 199, 0.9);
+  /* border: solid 1px rgba(30, 57, 79, 0.1); */
+}
+
+.content .row .card:hover img {
+  -moz-transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+
+.card .cover {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card .cover img {
+  max-width: 100%;
+  /* max-height: 100%; */
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.2s;
+  /* max-width: 100%; */
+}
+
+.card .app {
+  height: 48%;
+  /* width: 100%; */
+  /* margin: 8px; */
+  margin: 16px;
+  margin-top: 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  margin-left: 16px;
+  /* overflow: hidden; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.card .app .name {
+  font-size: 24px;
+  letter-spacing: 0.6px;
+  text-align: left;
+  color: #1e384f;
+  width: 100%;
+  margin-bottom: 7px;
+}
+
+.card .app .name a {
+  text-decoration: none;
+  color: black;
+}
+
+.card .app .description {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23px;
+  text-align: left;
+  color: rgba(30, 56, 79, 0.7);
+  margin-bottom: 8px;
+  font-family: 'GillSans-Light';
+}
+
+.card .app .version {
+  font-size: 16px;
+  text-align: left;
+  color: #72b420;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 10px;
+  /* padding-bottom: 8px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  align-content: center;
+  border-top: solid 1px rgba(168, 186, 212, 0.34);
+  /* border: 1px dotted brown; */
+}
+
+.card .app .version img {
+  width: 20px;
+  height: 20px;
+  margin-right: 9px;
+}
+
+.container .scroll-indicator {
+  position: absolute;
+  bottom: 44px;
+  right: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.scroll-indicator img {
+  width: 24px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.scroll-indicator span {
+  font-size: 14px;
+  font-weight: 300;
+  color: #1e384f;
+  cursor: pointer;
+}
+
+.product-footer {
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: #1e384f;
+}
+
+.product-footer span {
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.delay-nav {
+  animation-delay: 0.3s;
+}
+
+.delay-container {
+  animation-delay: 0.5s;
+}
+
+.letter-negative {
+  letter-spacing: -0.3px;
+}
+
+.scroll-small {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  display: none;
+}
+
+.scroll-small .holder {
+  margin: auto;
+  padding: 20px;
+  font-size: 14px;
+  color: #1e384f;
+}
+
+@media (max-width: 1030px) {
+  .breadcrum-container {
+    display: none;
+  }
+
+  .container .content {
+    width: 672px;
+  }
+
+  .container .scroll-indicator {
+    display: none;
+  }
+
+  .scroll-small {
+    display: block;
+  }
+}
+
+@media (max-width: 710px) {
+  .container .content {
+    width: 336px;
+  }
+
+  .header .text .title {
+    font-size: 56px;
+  }
+}

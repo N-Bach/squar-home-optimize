@@ -1,0 +1,80 @@
+doctype html
+html(lang='en')
+  head
+    title MYSQUAR - Connecting Myanmar
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(href=assetPath('animate.min.css'), rel='stylesheet')
+    link(href=assetPath('base-sidenav.css'), rel='stylesheet')
+    link(href=assetPath('contactus-style.css'), rel='stylesheet')
+
+  body.white-text
+    span#hamburger.pointer.animated.fadeInRight(onclick='openNav()')
+      img#ic-hamburger(src=assetPath('img/common/icon/ic-menu.png'), alt='sidenav')
+    .breadcrum-container.animated.fadeIn
+      ul.breadcrumb
+        li
+          a(href='/')
+            img.ic-home(src=assetPath('img/common/icon/ic-home-white.png'), alt='Home')
+        li CONTACT US
+    #mySidenav.sidenav
+      img.closebtn.pointer(src=assetPath('img/common/icon/ic-close.png'), alt='Close', onclick='closeNav()')
+      .page-link
+        a(href='/products')
+          span Our Products
+        a(href='https://careers.mysquar.com/', target='_blank')
+          span We Are Hiring
+        a(href='http://investors.mysquar.com/', target='_blank')
+          span For Investors
+        a.active(href='/contactus ', onclick='return false')
+          span Contact Us
+      footer
+        .social-link
+          a(href='https://twitter.com/mysquar', target='_blank')
+            img(src=assetPath('img/common/icon/ic-twitter.png'), alt='twitter')
+          a(href='https://www.linkedin.com/company/squar-asia', target='_blank')
+            img(src=assetPath('img/common/icon/ic-linkedin.png'), alt='linked')
+          a(href='https://www.youtube.com/channel/UChv63ZLGBBQERh2Kz4T84Iw', target='_blank')
+            img(src=assetPath('img/common/icon/ic-youtube.png'), alt='youtube')
+        span © 2017 SQUAR PTE LTD. All Rights Reserved
+    .container
+      a(href='/')
+        img.logo.animated.fadeInLeft(src=assetPath('img/common/icon/Logo-Mysquar.png'), alt='logo')
+      .content
+        .title.animated.fadeIn contact us.
+        .offices
+          .vn-office.animated.fadeIn
+            .office Vietnam Office:
+            .address
+              | 7th Floor, Vimedimex Building.
+              br
+              |  246 Cong Quynh Street, Pham Ngu Lao
+              br
+              |  Ward, District 1, Ho Chi Minh
+              |             City.
+          .my-office.animated.fadeIn
+            .office Myanmar Office:
+            .address
+              | Unit 3, Level 7, Union Financial Centre (UFC), Corner of Mahabandoola Road & Thein Phyu
+              br
+              |  Road & 45th Street,
+              |             Botataung Township, Yangon.
+        .email.animated.fadeIn
+          | Email:
+          a(href='mailto:info@mysquar.com')
+            span info@mysquar.com
+        .social-link.animated.fadeIn
+          a(href='https://twitter.com/mysquar', target='_blank')
+            img(src=assetPath('img/common/icon/ic-twitter.png'), alt='twitter')
+          a(href='https://www.linkedin.com/company/squar-asia', target='_blank')
+            img(src=assetPath('img/common/icon/ic-linkedin.png'), alt='linked')
+          a(href='https://www.youtube.com/channel/UChv63ZLGBBQERh2Kz4T84Iw', target='_blank')
+            img(src=assetPath('img/common/icon/ic-youtube.png'), alt='youtube')
+        .policy.animated.fadeIn
+          a(href='/community-standards') Community Standards
+          a.spacer(href='/privacy') Privacy Policy
+          a(href='/terms-of-service') Terms of Service
+        .copyright.animated.fadeIn
+          | © 2017 SQUAR PTE LTD. All Rights Reserved
+    script(src=assetPath('jquery.min.js'))
+    script(src=assetPath('base-sidenav.js'))

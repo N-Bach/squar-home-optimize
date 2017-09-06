@@ -1,0 +1,263 @@
+doctype html
+html(lang='en')
+  head
+    title MYSQUAR - Connecting Myanmar
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', type='text/css', href='/css/vendor/animate.min.css')
+    link(rel='stylesheet', type='text/css', href='/css/base-sidenav.css')
+    link(rel='stylesheet', type='text/css', href='/css/detail/mychat.css')
+    link(rel='shortcut icon', href='/img/icon/favicon.ico')
+  body
+    a(href='/')
+      img.logo.pointer.animated.fadeInLeft(src='/img/icon/Logo-Mysquar.png', alt='logo')
+    span#hamburger.pointer.animated.fadeInRight(onclick='openNav()')
+      img#ic-hamburger(src='/img/icon/ic-menu.png', alt='sidenav')
+    #mySidenav.sidenav
+      img.closebtn.pointer(src='/img/icon/ic-close.png', alt='Close', onclick='closeNav()')
+      .page-link
+        a(href='/products')
+          span Our Products
+        a(href='https://careers.mysquar.com/', target='_blank')
+          span We Are Hiring
+        a(href='http://investors.mysquar.com/', target='_blank')
+          span For Investors
+        a(href='/contactus ')
+          span Contact Us
+      footer
+        .social-link
+          a(href='https://twitter.com/mysquar', target='_blank')
+            img(src='/img/icon/ic-twitter.png', alt='twitter')
+          a(href='https://www.linkedin.com/company/squar-asia', target='_blank')
+            img(src='/img/icon/ic-linkedin.png', alt='linked')
+          a(href='https://www.youtube.com/channel/UChv63ZLGBBQERh2Kz4T84Iw', target='_blank')
+            img(src='/img/icon/ic-youtube.png', alt='youtube')
+        span © 2017 SQUAR PTE LTD. All Rights Reserved
+    .breadcrum-container.animated.fadeIn
+      ul.breadcrumb
+        li
+          a(href='/')
+            img.ic-home(src='/img/icon/ic-home-white.png', alt='Home')
+        li
+          a(href='/products') OUR PRODUCTS
+        li MYCHAT
+    .header.animated.fadeIn
+      .content
+        // <div class="hero half"></div>
+        .hero.animated.fadeInLeft.delay-hero
+        .intro.animated.fadeInRight.delay-intro
+          // <div class="intro half">
+          .logo-mychat.mg-bottom-8
+            img(src='/img/icon/logo-mychat.png', alt='logo-mychat', height='80px', width='80px')
+          .name.mg-bottom-8
+            | MyChat
+          .description.mg-bottom-26
+            | A chat app built solely for Myanmar. MyChat brings you a fast and reliable chat experience that runs smoothly even on low
+            | end devices and flaky cellular networks.
+          .app-link.mg-bottom-26
+            button.apk(onclick="window.open('http://download.mysquar.com.s3.amazonaws.com/apk/mychat/mychat.apk','_blank')")
+              img(src='/img/icon/ic-download.png', alt='Download APK')
+              |  APK Download
+            button.google-play(onclick=" window.open('https://play.google.com/store/apps/details?id=com.squar.mychat.release','_blank')")
+              img(src='/img/icon/btt-google.png', alt='Get MyCHAT in Google Play')
+          .follow
+            | Follow us on
+            a(href='https://www.facebook.com/MyChatMyanmar/', target='_blank')
+              img(src='/img/icon/if-fb-white.png', alt='MyCHAT FB page', width='24px', height='24px')
+    #nav.tabs.animated.fadeIn.delay-nav
+      .tab-button
+        div
+          button#defaultOpen.tablinks(onclick="openTab(event, 'overview')") OVERVIEW
+        div
+          button.tablinks(onclick="openTab(event, 'feature')") FEATURES
+        div
+          button.tablinks(onclick="openTab(event, 'update')") UPDATES
+    .container
+      #overview.tabcontent
+        .content
+          .text.is-animated
+            .wrapper
+              .title
+                | an app to rule it all.
+              .body
+                | MyCHAT is the first social chat application developed exclusively for Myanmar. It runs on technology that minimises data
+                | usage, saving you money!
+                br
+                br
+                |  Always stay connected with friends, create group chats, share fun stickers, start dating, discover
+                |               exclusive apps and games and more!
+                br
+                br
+                |  Join the MyChat community and become part of something big.
+          .mockup.is-animated
+            img(src='/img/detail/mychat/my-chat-mockup.png', alt='mychat-mockup')
+      // end of tab overview
+      #feature.tabcontent
+        .scroll-indicator
+          img#scroll-down.pointer(src='/img/icon/ic-animated-scroll-up.gif', alt='ic-scroll-down', onclick='topFunction()')
+          span#text-scroll-down.pointer(onclick='topFunction()') Back to Top
+        .content
+          section#chat.feature-group.bg-grey.is-animated
+            .mockup
+              img(src='/img/detail/mychat/mockup-chatting.png', alt='chatting')
+            .text.center-vertical
+              .wrapper.mg-left-32
+                .icon-holder.mg-bottom-16
+                  img(src='/img/icon/ic-chat.png', alt='chatting')
+                .title.mg-bottom-12
+                  | unlimited chatting.
+                .body.maxwidth-chatting
+                  | Why SMS when you can MyChat for free?
+                  br
+                  br
+                  |  - Search and make new friends using the Nearby Friends feature.
+                  br
+                  |  - Create group chats with
+                  |                 up to 30 people.
+                  br
+                  |  - Send up to 5 photos at once with captions.
+                  br
+                  |  - An online wallet to use your
+                  |                 remaining balance for purchases later.
+          // end of section chat
+          section#sticker.feature-group.is-animated
+            .text-end.center-vertical
+              .wrapper
+                .icon-holder.mg-bottom-16
+                  img(src='/img/icon/ic-sticker.png', alt='sticker')
+                .title.mg-bottom-12
+                  | sticker store.
+                .body.maxwidth-sticker
+                  | Make your chats more interesting and express yourself using our original sticker sets.
+                  br
+                  br
+                  |  - Exclusively designed for Myanmar!
+                  br
+                  |  - Hundreds of cool stickers to spice up your conversations.
+                  br
+                  |  - Get stickers with your favourite MyChat Friends - Bon Bon, Ton Ton, Sandi and more!
+            .mockup
+              img(src='/img/detail/mychat/mockup-sticker.png', alt='sticker')
+          // end of section sticker
+          section#dating.feature-group.bg-grey.is-animated
+            .mockup
+              img(src='/img/detail/mychat/mockup-dating.png', alt='sticker')
+            .text.center-vertical
+              .wrapper
+                .icon-holder.mg-bottom-16
+                  img(src='/img/icon/ic-dating.png', alt='chatting')
+                .title.mg-bottom-12
+                  | new dating feature.
+                .body.maxwidth-datting
+                  | Meet the love of your life through MyChat Date.
+                  br
+                  br
+                  |  - Completely FREE to view up to 20 profiles per day and swipe to skip or like your matches.
+                  br
+                  |  - Easily connect with people nearby
+                  br
+                  |  - Create filters based on age, gender and distance.
+                  br
+                  |  -
+                  |                 Enhance your dating experience with a Premium Subscription- unlock unlimited profiles to increase your chances
+                  |                 of meeting that special someone.
+                  br
+          // end of section datting
+      // end of tab feature
+      #update.tabcontent.bg-grey
+        .scroll-indicator
+          img#scroll-down.pointer(src='/img/icon/ic-animated-scroll-up.gif', alt='ic-scroll-down', onclick='topFunction()')
+          span#text-scroll-down.pointer(onclick='topFunction()') Back to Top
+        .content
+          .version-list.is-animated
+            .version
+              .title Version 2.5
+              .body.maxwidth-version
+                ul
+                  li(style='list-style-type:none')
+                    | Refine the Date feature
+                    ol
+                      li Removed banner photo; made avatar bigger on the user profile screen
+                      li Tap on profile photo to expand
+                      li Add a highlighted photos section
+                  li Show default status if user hasn't set it
+                  li Free user accounts can chat after matching; previously a premium feature
+            .version
+              .title Version 2.4
+              .body.maxwidth-version
+                ul
+                  li Add "Date" tab to main menu
+                  li New users of Date receive a 7-day trial to view unlimited profiles
+                  li Free accounts on Date receive 20 profiles per day
+                  li Remove icons from Payment screen to reduce app size
+            .version
+              .title Version 2.3
+              .body.maxwidth-version
+                ul
+                  li Can forward messages
+                  li Split push notifications of each group chat
+                  li Show message preview in push notifications
+                  li URL preview
+                  li Created a Sticker store with free and paid stickers
+                  li Share a sticker pack
+                  li Share images or links from the web or phone photo gallery into MyChat
+                  li Expanded payment options:
+                  ol
+                    li MECTel and Telenor phone billing
+                    li MECTel top-up card
+                    li Red Dot Payments
+                    li Online wallet
+            .version
+              .title Version 2.2
+              .body.maxwidth-version
+                ul
+                  li Remove "Nearby friends" from Discover
+                  li Combined Apps and Games into a sub-tab under Discover
+                  li Add "Stickers" as second sub-tab under Discover
+                  li Redesign photo sharing UI
+                  li Add new keyboard layout
+                  li Change send message icon
+                  li Add "Share Location" into chat
+                  li Add "Share Contact" into chat
+                  li Add "Page Down" button into chat
+                  li Group messages togeher that are sent/received within a one minute period
+                  li Able to download a paid sticker pack
+                  li Add in-app browser viewing
+            .version
+              .title Version 2.1
+              .body.maxwidth-version
+                ul
+                  li Add "Share Profile" feature
+                  li Add "Downloader" to push updates for APK users
+                  li Add "Response" button when opening a profile of a friend request
+            .version
+              .title Version 2.0
+              .body.maxwidth-version
+                ul
+                  li Complete UI redesign of MyChat
+                  li Transitioned from Firebase to building our own real time messaging system
+                  li Streamline onboarding process
+                  li News feed removed
+                  li Add “Discover” tab to main menu
+          .mockup.is-animated
+            .wrapper
+              img#new-datting(src='/img/detail/mychat/my-chat-ads.png', alt='ads')
+              .app-link.mg-top-14
+                button.apk(onclick="window.open('http://download.mysquar.com.s3.amazonaws.com/apk/mychat/mychat.apk','_self')")
+                  img(src='/img/icon/ic-download.png', alt='Download APK')
+                  |  APK Download
+                button.google-play(onclick=" window.open('https://play.google.com/store/apps/details?id=com.squar.mychat.release','_blank')")
+                  img(src='/img/icon/btt-google.png', alt='Get MyCHAT in Google Play')
+      // end of tab update
+    .scroll-small
+      .holder
+        img(src='/img/icon/bk_top_blk.gif', alt='ic-back-to-top', onclick='topFunction()')
+        div(onclick='topFunction()') Back to top
+    footer.product-footer.animated.fadeIn.delay-foot
+      span © 2017 SQUAR PTE LTD. All Rights Reserved.
+    script.
+      var isGame = false;
+    script(type='text/javascript ', src='/js/vendor/jquery.min.js ')
+    script(type='text/javascript ', src='/js/vendor/jquery.viewportchecker.min.js')
+    script(type='text/javascript ', src='/js/base-sidenav.js ')
+    script(type='text/javascript ', src='/js/detail/mychat.js ')
