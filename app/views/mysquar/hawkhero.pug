@@ -4,18 +4,17 @@ html(lang='en')
     title MYSQUAR - Connecting Myanmar
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='stylesheet', type='text/css', href='/css/vendor/animate.min.css')
-    link(rel='stylesheet', type='text/css', href='/css/base-sidenav.css')
-    link(rel='stylesheet', type='text/css', href='/css/detail/lom.css')
-    link(rel='stylesheet', type='text/css', href='/css/detail/hawkhero.css')
-    link(rel='shortcut icon', href='/img/icon/favicon.ico')
+    link(href=assetPath('animate.min.css'), rel='stylesheet')
+    link(href=assetPath('base-sidenav.css'), rel='stylesheet')
+    link(href=assetPath('lom.css'), rel='stylesheet')
+    link(href=assetPath('hawkhero.css'), rel='stylesheet')
   body
     a(href='/')
-      img.logo.pointer.animated.fadeInLeft(src='/img/icon/Logo-Mysquar.png', alt='logo')
+      img.logo.pointer.animated.fadeInLeft(src=assetPath('img/common/icon/Logo-Mysquar.png'), alt='logo')
     span#hamburger.pointer.animated.fadeInRight(onclick='openNav()')
-      img#ic-hamburger(src='/img/icon/ic-menu.png', alt='sidenav')
+      img#ic-hamburger(src=assetPath('img/common/icon/ic-menu.png'), alt='sidenav')
     #mySidenav.sidenav
-      img.closebtn.pointer(src='/img/icon/ic-close.png', alt='Close', onclick='closeNav()')
+      img.closebtn.pointer(src=assetPath('img/common/icon/ic-close.png'), alt='Close', onclick='closeNav()')
       .page-link
         a(href='/products')
           span Our Products
@@ -28,17 +27,17 @@ html(lang='en')
       footer
         .social-link
           a(href='https://twitter.com/mysquar', target='_blank')
-            img(src='/img/icon/ic-twitter.png', alt='twitter')
+            img(src=assetPath('img/common/icon/ic-twitter.png'), alt='twitter')
           a(href='https://www.linkedin.com/company/squar-asia', target='_blank')
-            img(src='/img/icon/ic-linkedin.png', alt='linked')
+            img(src=assetPath('img/common/icon/ic-linkedin.png'), alt='linked')
           a(href='https://www.youtube.com/channel/UChv63ZLGBBQERh2Kz4T84Iw', target='_blank')
-            img(src='/img/icon/ic-youtube.png', alt='youtube')
+            img(src=assetPath('img/common/icon/ic-youtube.png'), alt='youtube')
         span © 2017 SQUAR PTE LTD. All Rights Reserved
     .breadcrum-container.animated.fadeIn
       ul.breadcrumb
         li
           a(href='/')
-            img.ic-home(src='/img/icon/ic-home-white.png', alt='Home')
+            img.ic-home(src=assetPath('img/common/icon/ic-home-white.png'), alt='Home')
         li
           a(href='/products') OUR PRODUCTS
         li HAWK HERO
@@ -49,7 +48,7 @@ html(lang='en')
         .intro.animated.fadeInRight.delay-intro
           // <div class="intro half">
           .logo-lom.mg-bottom-8
-            img(src='/img/detail/hawkhero/logo.png', alt='logo-hawkhero')
+            img(src=assetPath('img/common/detail/hawkhero/logo.png'), alt='logo-hawkhero')
           .name.mg-bottom-8
             | Hawk Hero
           .description.mg-bottom-26
@@ -57,16 +56,16 @@ html(lang='en')
             | phone.
           .app-link.mg-bottom-26
             button.apk(onclick="window.open('http://tracking.squargame.com/download.php?game=hawkHero&utm_source=Landing_APK','_blank')")
-              img(src='/img/icon/ic-download.png', alt='Download APK')
+              img(src=assetPath('img/common/icon/ic-download.png'), alt='Download APK')
               |  APK Download
             button.google-play(onclick=" window.open('https://play.google.com/store/apps/details?id=com.mygame.hawkhero&referrer=utm_source%3DLanding_GP','_blank')")
-              img(src='/img/icon/btt-google.png', alt='Get Hawk Hero in Google Play')
+              img(src=assetPath('img/common/icon/btt-google.png'), alt='Get Hawk Hero in Google Play')
             button.app-store(onclick=" window.open('https://itunes.apple.com/us/app/hawk-hero-thein-hngat-thuye/id1146335543','_blank')")
-              img(src='/img/icon/btt-appstore.png', alt='Get Hawk Hero in App Store')
+              img(src=assetPath('img/common/icon/btt-appstore.png'), alt='Get Hawk Hero in App Store')
           .follow
             | Follow us on
             a(href='https://www.facebook.com/hawkheromm/', target='_blank')
-              img(src='/img/icon/if-fb-white.png', alt='Hawk Hero FB page', width='24px', height='24px')
+              img(src=assetPath('img/common/icon/if-fb-white.png'), alt='Hawk Hero FB page', width='24px', height='24px')
             span
               | Website:
               a(href='http://hawkheromm.com/', target='_blank') hawkheromm.com
@@ -82,11 +81,11 @@ html(lang='en')
               | conquers all and maidens come along with not only their striking beauty, but amazing fighting skills. Find sacred
               | artifacts and treasures throughout your journey towards becoming a legendary hero in the Wulin world.
         .mockup.pd-left-52.is-animated-right
-          img(src='/img/detail/hawkhero/mockup-overview.png', alt='hawkhero-overview')
+          img(src=assetPath('img/common/detail/hawkhero/mockup-overview.png'), alt='hawkhero-overview')
       // end of overview
       #feature.content.pd-bottom-32.bg-dark
         .mockup.pd-right-52.justify-end.is-animated-left
-          img(src='/img/detail/hawkhero/mockup-features.png', alt='hawkhero-overview')
+          img(src=assetPath('img/common/detail/hawkhero/mockup-features.png'), alt='hawkhero-overview')
         .text-start.is-animated-right
           .wrapper
             .title
@@ -105,7 +104,7 @@ html(lang='en')
       span © 2017 SQUAR PTE LTD. All Rights Reserved.
     script.
       var isGame = true;
-    script(type='text/javascript ', src='/js/vendor/jquery.min.js ')
-    script(type='text/javascript ', src='/js/vendor/jquery.viewportchecker.min.js')
-    script(type='text/javascript ', src='/js/base-sidenav.js ')
-    script(type='text/javascript ', src='/js/detail/lom.js ')
+    script(src=assetPath('jquery.min.js'))
+    script(src=assetPath('jquery.viewportchecker.min.js'))
+    script(src=assetPath('base-sidenav.js'))
+    script(src=assetPath('lom.js'))

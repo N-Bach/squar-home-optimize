@@ -4,17 +4,16 @@ html(lang='en')
     title MYSQUAR - Connecting Myanmar
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='stylesheet', type='text/css', href='/css/vendor/animate.min.css')
-    link(rel='stylesheet', type='text/css', href='/css/base-sidenav.css')
-    link(rel='stylesheet', type='text/css', href='/css/detail/lom.css')
-    link(rel='shortcut icon', href='/img/icon/favicon.ico')
+    link(href=assetPath('animate.min.css'), rel='stylesheet')
+    link(href=assetPath('base-sidenav.css'), rel='stylesheet')
+    link(href=assetPath('lom.css'), rel='stylesheet')
   body
     a(href='/')
-      img.logo.pointer.animated.fadeInLeft(src='/img/icon/Logo-Mysquar.png', alt='logo')
+      img.logo.pointer.animated.fadeInLeft(src=assetPath('img/common/icon/Logo-Mysquar.png'), alt='logo')
     span#hamburger.pointer.animated.fadeInRight(onclick='openNav()')
-      img#ic-hamburger(src='/img/icon/ic-menu.png', alt='sidenav')
+      img#ic-hamburger(src=assetPath('img/common/icon/ic-menu.png'), alt='sidenav')
     #mySidenav.sidenav
-      img.closebtn.pointer(src='/img/icon/ic-close.png', alt='Close', onclick='closeNav()')
+      img.closebtn.pointer(src=assetPath('img/common/icon/ic-close.png'), alt='Close', onclick='closeNav()')
       .page-link
         a(href='/products')
           span Our Products
@@ -27,28 +26,26 @@ html(lang='en')
       footer
         .social-link
           a(href='https://twitter.com/mysquar', target='_blank')
-            img(src='/img/icon/ic-twitter.png', alt='twitter')
+            img(src=assetPath('img/common/icon/ic-twitter.png'), alt='twitter')
           a(href='https://www.linkedin.com/company/squar-asia', target='_blank')
-            img(src='/img/icon/ic-linkedin.png', alt='linked')
+            img(src=assetPath('img/common/icon/ic-linkedin.png'), alt='linked')
           a(href='https://www.youtube.com/channel/UChv63ZLGBBQERh2Kz4T84Iw', target='_blank')
-            img(src='/img/icon/ic-youtube.png', alt='youtube')
+            img(src=assetPath('img/common/icon/ic-youtube.png'), alt='youtube')
         span © 2017 SQUAR PTE LTD. All Rights Reserved
     .breadcrum-container.animated.fadeIn
       ul.breadcrumb
         li
           a(href='/')
-            img.ic-home(src='/img/icon/ic-home-white.png', alt='Home')
+            img.ic-home(src=assetPath('img/common/icon/ic-home-white.png'), alt='Home')
         li
           a(href='/products') OUR PRODUCTS
         li LAND OF MAGIC
     .header.animated.fadeIn
       .content
-        // <div class="hero half"></div>
         .hero.animated.fadeInLeft.delay-hero
         .intro.animated.fadeInRight.delay-intro
-          // <div class="intro half">
           .logo-lom.mg-bottom-8
-            img(src='/img/detail/lom/Logo.png', alt='logo-landofmagic')
+            img(src=assetPath('img/common/detail/lom/Logo.png'), alt='logo-landofmagic')
           .name.mg-bottom-8
             | Land of Magic
           .description.mg-bottom-26
@@ -56,14 +53,14 @@ html(lang='en')
             | is all about!
           .app-link.mg-bottom-26
             button.apk(onclick="window.open('http://tracking.squargame.com/download.php?game=landOfMagic&utm_source=LD_APK','_blank')")
-              img(src='/img/icon/ic-download.png', alt='Download APK')
+              img(src=assetPath('img/common/icon/ic-download.png'), alt='Download APK')
               |  APK Download
             button.google-play(onclick=" window.open('https://play.google.com/store/apps/details?id=com.mygame.landofmagic&referrer=utm_source%3DLP','_blank')")
-              img(src='/img/icon/btt-google.png', alt='Get Land of Magic in Google Play')
+              img(src=assetPath('img/common/icon/btt-google.png'), alt='Get Land of Magic in Google Play')
           .follow
             | Follow us on
             a(href='https://www.facebook.com/landofmagicmm/', target='_blank')
-              img(src='/img/icon/if-fb-white.png', alt='MyCHAT FB page', width='24px', height='24px')
+              img(src=assetPath('img/common/icon/if-fb-white.png'), alt='MyCHAT FB page', width='24px', height='24px')
             span
               | Website:
               a(href='http://landofmagicmm.com', target='_blank') landofmagicmm.com
@@ -80,11 +77,11 @@ html(lang='en')
               | magicians control fire and taoists control monsters. Unite together to fight against the minotaur and recapture
               | the Land of Magic
         .mockup.pd-left-52.is-animated-right
-          img(src='/img/detail/lom/Mockup-overview.png', alt='lom-overview')
+          img(src=assetPath('img/common/detail/lom/Mockup-overview.png'), alt='lom-overview')
       // end of overview
       #feature.content.pd-bottom-32.bg-dark
         .mockup.pd-right-52.justify-end.is-animated-left
-          img(src='/img/detail/lom/Mockup-features.png', alt='lom-overview')
+          img(src=assetPath('img/common/detail/lom/Mockup-features.png'), alt='lom-overview')
         .text-start.is-animated-right
           .wrapper
             .title
@@ -106,7 +103,7 @@ html(lang='en')
       span © 2017 SQUAR PTE LTD. All Rights Reserved.
     script.
       var isGame = true;
-    script(type='text/javascript ', src='/js/vendor/jquery.min.js ')
-    script(type='text/javascript ', src='/js/vendor/jquery.viewportchecker.min.js')
-    script(type='text/javascript ', src='/js/base-sidenav.js ')
-    script(type='text/javascript ', src='/js/detail/lom.js ')
+    script(src=assetPath('jquery.min.js'))
+    script(src=assetPath('jquery.viewportchecker.min.js'))
+    script(src=assetPath('base-sidenav.js'))
+    script(src=assetPath('lom.js'))

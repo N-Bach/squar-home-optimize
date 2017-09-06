@@ -4,18 +4,18 @@ html(lang='en')
     title MYSQUAR - Connecting Myanmar
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='stylesheet', type='text/css', href='/css/vendor/animate.min.css')
-    link(rel='stylesheet', type='text/css', href='/css/base-sidenav.css')
-    link(rel='stylesheet', type='text/css', href='/css/detail/lom.css')
-    link(rel='stylesheet', type='text/css', href='/css/detail/luckywingabar.css')
-    link(rel='shortcut icon', href='/img/icon/favicon.ico')
+    link(rel='shortcut icon', href='img/common/icon/favicon.ico')
+    link(href=assetPath('animate.min.css'), rel='stylesheet')
+    link(href=assetPath('base-sidenav.css'), rel='stylesheet')
+    link(href=assetPath('lom.css'), rel='stylesheet')
+    link(href=assetPath('luckywingabar.css'), rel='stylesheet')
   body
     a(href='/')
-      img.logo.pointer.animated.fadeInLeft(src='/img/icon/Logo-Mysquar.png', alt='logo')
+      img.logo.pointer.animated.fadeInLeft(src=assetPath('img/common/icon/Logo-Mysquar.png'), alt='logo')
     span#hamburger.pointer.animated.fadeInRight(onclick='openNav()')
-      img#ic-hamburger(src='/img/icon/ic-menu.png', alt='sidenav')
+      img#ic-hamburger(src=assetPath('img/common/icon/ic-menu.png'), alt='sidenav')
     #mySidenav.sidenav
-      img.closebtn.pointer(src='/img/icon/ic-close.png', alt='Close', onclick='closeNav()')
+      img.closebtn.pointer(src=assetPath('img/common/icon/ic-close.png'), alt='Close', onclick='closeNav()')
       .page-link
         a(href='/products')
           span Our Products
@@ -28,44 +28,42 @@ html(lang='en')
       footer
         .social-link
           a(href='https://twitter.com/mysquar', target='_blank')
-            img(src='/img/icon/ic-twitter.png', alt='twitter')
+            img(src=assetPath('img/common/icon/ic-twitter.png'), alt='twitter')
           a(href='https://www.linkedin.com/company/squar-asia', target='_blank')
-            img(src='/img/icon/ic-linkedin.png', alt='linked')
+            img(src=assetPath('img/common/icon/ic-linkedin.png'), alt='linked')
           a(href='https://www.youtube.com/channel/UChv63ZLGBBQERh2Kz4T84Iw', target='_blank')
-            img(src='/img/icon/ic-youtube.png', alt='youtube')
+            img(src=assetPath('img/common/icon/ic-youtube.png'), alt='youtube')
         span © 2017 SQUAR PTE LTD. All Rights Reserved
     .breadcrum-container.animated.fadeIn
       ul.breadcrumb
         li
           a(href='/')
-            img.ic-home(src='/img/icon/ic-home-white.png', alt='Home')
+            img.ic-home(src=assetPath('img/common/icon/ic-home-white.png'), alt='Home')
         li
           a(href='/products') OUR PRODUCTS
         li LUCKY WINGABAR
     #luckywingabar-bg.header.animated.fadeIn
       .content
-        // <div class="hero half"></div>
         #luckywingabar-hero.hero.animated.fadeInLeft.delay-hero
         .intro.animated.fadeInRight.delay-intro
-          // <div class="intro half">
           .logo-lom.mg-bottom-8
-            img(src='/img/detail/luckywingabar/logo.png', alt='logo-luckywingabar')
+            img(src=assetPath('img/common/detail/luckywingabar/logo.png'), alt='logo-luckywingabar')
           .name.mg-bottom-8
             | Lucky Wingabar
           #luckywingabar-maxwidth.description.mg-bottom-26
             | The perfect luxury casino gaming experience with a selection of card and table games is right here at your fingertips.
           .app-link.mg-bottom-26
             button.apk(onclick="window.open('http://tracking.squargame.com/download.php?game=luckyWingabar&utm_source=LD_APK','_blank')")
-              img(src='/img/icon/ic-download.png', alt='Download APK')
+              img(src=assetPath('img/common/icon/ic-download.png'), alt='Download APK')
               |  APK Download
             button.google-play(onclick=" window.open('https://play.google.com/store/apps/details?id=com.mygame.luckywingabar&referrer=utm_source%3DLD_GP','_blank')")
-              img(src='/img/icon/btt-google.png', alt='Get LuckyWingabar in Google Play')
+              img(src=assetPath('img/common/icon/btt-google.png'), alt='Get LuckyWingabar in Google Play')
             button.app-store(onclick=" window.open('https://itunes.apple.com/us/app/lucky-wingabar/id1206674285?ls=1&mt=8','_blank')")
-              img(src='/img/icon/btt-appstore.png', alt='Get LuckyWingabar in App Store')
+              img(src=assetPath('img/common/icon/btt-appstore.png'), alt='Get LuckyWingabar in App Store')
           .follow
             | Follow us on
             a(href='https://www.facebook.com/luckywingabarmm/', target='_blank')
-              img(src='/img/icon/if-fb-white.png', alt='Lucky Wingabar FB page', width='24px', height='24px')
+              img(src=assetPath('img/common/icon/if-fb-white.png'), alt='Lucky Wingabar FB page', width='24px', height='24px')
             span
               | Website:
               a(href='http://luckywingabar.com', target='_blank') luckywingabar.com
@@ -79,14 +77,14 @@ html(lang='en')
               | The thrill and excitement of a life-like casino and table games! Lucky Wingabar combines state of the art 2D graphics and
               | a simple user interface for a sensational interactive experience. Choose from a variety of casino mini-games.
         .mockup.pd-left-52.is-animated-right
-          img(src='/img/detail/luckywingabar/mockup-overview.png', alt='luckywingabar-overview')
+          img(src=assetPath('img/common/detail/luckywingabar/mockup-overview.png'), alt='luckywingabar-overview')
       // end of overview
       #feature.content.pd-bottom-32.bg-dark
         .special-content
           .half.left
             .text-white
               .mockup
-                img#mockup-feature(src='/img/detail/luckywingabar/mockup-features.png', alt='luckywingabar-feature')
+                img#mockup-feature(src=assetPath('img/common/detail/luckywingabar/mockup-features.png'), alt='luckywingabar-feature')
               .wrapper.show-this
                 .title.mg-bottom-22
                   | key features.
@@ -140,7 +138,7 @@ html(lang='en')
       span © 2017 SQUAR PTE LTD. All Rights Reserved.
     script.
       var isGame = true;
-    script(type='text/javascript ', src='/js/vendor/jquery.min.js ')
-    script(type='text/javascript ', src='/js/vendor/jquery.viewportchecker.min.js')
-    script(type='text/javascript ', src='/js/base-sidenav.js ')
-    script(type='text/javascript ', src='/js/detail/lom.js ')
+    script(src=assetPath('jquery.min.js'))
+    script(src=assetPath('jquery.viewportchecker.min.js'))
+    script(src=assetPath('base-sidenav.js'))
+    script(src=assetPath('lom.js'))

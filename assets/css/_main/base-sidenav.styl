@@ -1,3 +1,22 @@
+@font-face {
+  font-family: 'GillSans';
+  src: url('fonts/GillSans.ttf');
+}
+
+@font-face {
+  font-family: 'GillSans-Bold';
+  src: url('fonts/GillSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'GillSans-Light';
+  src: url('fonts/GillSans-Light.ttf');
+}
+
+* {
+  font-family: 'GillSans';
+}
+
 body {
   margin: 0;
 }
@@ -44,7 +63,7 @@ body {
   top: 0;
   right: 0;
   /* background-color: #111;  Black */
-  background-image: url('../img/bg.jpg');
+  background-image: url('img/common/bg.jpg');
   background-size: 100% 100%;
   overflow-x: hidden; /* Disable horizontal scroll */
   /* padding-top: 60px;  Place content 60px from the top  */
@@ -194,7 +213,7 @@ ul.breadcrumb li img {
 /* Add a slash symbol (/) before/behind each list item */
 ul.breadcrumb li + li:before {
   padding: 0 8px;
-  content: url('../img/icon/ic-arrow-white.png'); /* with class ModalCarrot ??*/
+  content: url('img/common/icon/ic-arrow-white.png'); /* with class ModalCarrot ??*/
 }
 
 /* Add a color to all links inside the list */
@@ -234,7 +253,7 @@ ul.breadcrumb li a:hover {
 }
 
 .sticky-crumb ul li + li:before {
-  content: url('../img/icon/ic-arrow.png');
+  content: url('img/common/icon/ic-arrow.png');
 }
 
 .sticky-sidenav {

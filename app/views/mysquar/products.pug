@@ -4,15 +4,14 @@ html(lang='en')
     title MYSQUAR - Connecting Myanmar
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='stylesheet', type='text/css', href='css/vendor/animate.min.css')
-    link(href='css/products-style.css', rel='stylesheet')
-    link(rel='shortcut icon', href='/img/icon/favicon.ico')
+    link(rel='shortcut icon', href='/img/common/icon/favicon.ico')
+    link(href=assetPath('animate.min.css'), rel='stylesheet')
+    link(href=assetPath('products-style.css'), rel='stylesheet')
   body
-    // <img src="img/icon/Logo-Mysquar.png" alt="logo" class="logo pointer">
     span#hamburger.pointer.animated.fadeInRight(onclick='openNav()')
-      img#ic-hamburger(src='img/icon/ic-menu.png', alt='sidenav')
+      img#ic-hamburger(src=assetPath('img/common/icon/ic-menu.png'), alt='sidenav')
     #mySidenav.sidenav
-      img.closebtn.pointer(src='img/icon/ic-close.png', alt='Close', onclick='closeNav()')
+      img.closebtn.pointer(src=assetPath('img/common/icon/ic-close.png'), alt='Close', onclick='closeNav()')
       .page-link
         a.active(href='/products', onclick='return false')
           span Our Products
@@ -25,21 +24,21 @@ html(lang='en')
       footer
         .social-link
           a(href='https://twitter.com/mysquar', target='_blank')
-            img(src='img/icon/ic-twitter.png', alt='twitter')
+            img(src=assetPath('img/common/icon/ic-twitter.png'), alt='twitter')
           a(href='https://www.linkedin.com/company/squar-asia', target='_blank')
-            img(src='img/icon/ic-linkedin.png', alt='linked')
+            img(src=assetPath('img/common/icon/ic-linkedin.png'), alt='linked')
           a(href='https://www.youtube.com/channel/UChv63ZLGBBQERh2Kz4T84Iw', target='_blank')
-            img(src='img/icon/ic-youtube.png', alt='youtube')
+            img(src=assetPath('img/common/icon/ic-youtube.png'), alt='youtube')
         span © 2017 SQUAR PTE LTD. All Rights Reserved
     .breadcrum-container.animated.fadeIn
       ul.breadcrumb
         li
           a(href='/')
-            img.ic-home(src='img/icon/ic-home-white.png', alt='Home')
+            img.ic-home(src=assetPath('img/common/icon/ic-home-white.png'), alt='Home')
         li OUR PRODUCTS
     .header.animated.fadeIn
       a(href='/')
-        img.logo.pointer.animated.fadeInLeft(src='img/icon/Logo-Mysquar.png', alt='logo')
+        img.logo.pointer.animated.fadeInLeft(src=assetPath('img/common/icon/Logo-Mysquar.png'), alt='logo')
       .text
         span.title our products.
         span.body We make something you love
@@ -53,14 +52,14 @@ html(lang='en')
           button.tablinks(data-filter='2', onclick="openCity(event, 'apps')") APPS
     .container.animated.fadeIn.delay-container
       .scroll-indicator
-        img#scroll-down.pointer(src='img/icon/ic-animated-scroll-up.gif', alt='ic-scroll-down', onclick='topFunction()')
+        img#scroll-down.pointer(src=assetPath('img/common/icon/ic-animated-scroll-up.gif'), alt='ic-scroll-down', onclick='topFunction()')
         span#text-scroll-down.pointer(onclick='topFunction()') Back to Top
       #all.content.tabcontent
         .row.is-animated
           .card
             .cover
               a(href='/products/mychat')
-                img(src='img/games-apps/MyChat.jpg', alt='MyChat')
+                img(src=assetPath('img/common/games-apps/MyChat.jpg'), alt='MyChat')
             .app
               .name
                 a(href='/products/mychat') MyChat
@@ -68,47 +67,47 @@ html(lang='en')
                 | A chat app built solely for Myanmar. MyChat brings you a fast and reliable chat experience that is smooth even
                 | on low end devices and flaky cellular networks.
               .version
-                img(src='img/icon/ic-update.png', alt='latest')
+                img(src=assetPath('img/common/icon/ic-update.png'), alt='latest')
                 |  V2.5 Released in August 2017
           .card
             .cover
               a(href='/products/callhome')
-                img(src='img/games-apps/CallHome.jpg', alt='Callhome')
+                img(src=assetPath('img/common/games-apps/CallHome.jpg'), alt='Callhome')
             .app
               .name
                 a(href='/products/callhome') CallHome
               .description
                 | A VOIP app that lets you call anyone internationally at affordable rates, even if they don't have the app installed!
               .version
-                img(src='img/icon/ic-update.png', alt='latest')
+                img(src=assetPath('img/common/icon/ic-update.png'), alt='latest')
                 |  V1.3 Released in July 2017
           .card
             .cover
               a(href='/products/fastsell')
-                img(src='img/games-apps/FastSell.jpg', alt='MyChat')
+                img(src=assetPath('img/common/games-apps/FastSell.jpg'), alt='MyChat')
             .app
               .name
                 a(href='/products/fastsell') FastSell
               .description A peer-to-peer marketplace, allowing people to trade with other people nearby.
               .version
-                img(src='img/icon/ic-update.png', alt='latest')
+                img(src=assetPath('img/common/icon/ic-update.png'), alt='latest')
                 |  V2.6 Released in July 2017
           .card
             .cover
               a(href='/products/mingalarbarmorning')
-                img(src='img/games-apps/MM.jpg', alt='MyChat')
+                img(src=assetPath('img/common/games-apps/MM.jpg'), alt='MyChat')
             .app
               .name
                 a(href='/products/mingalarbarmorning') Mingalarbar Morning
               .description
                 | A news aggregator delivering the latest breaking news and top stories in Myanmar and around the world.
               .version
-                img(src='img/icon/ic-update.png', alt='latest')
+                img(src=assetPath('img/common/icon/ic-update.png'), alt='latest')
                 |  Released in July 2017
           .card
             .cover
               a(href='/products/landofmagic')
-                img(src='img/games-apps/LOM.png', alt='MyChat')
+                img(src=assetPath('img/common/games-apps/LOM.png'), alt='MyChat')
             .app
               .name
                 a(href='/products/landofmagic') Land of Magic
@@ -116,12 +115,12 @@ html(lang='en')
                 | The first MMORPG in Myanmar with three classes of characters to choose from and nine unique skills to engage
                 | in PvP battles.
               .version
-                img(src='img/icon/ic-update.png', alt='latest')
+                img(src=assetPath('img/common/icon/ic-update.png'), alt='latest')
                 |  Released in August 2017
           .card
             .cover
               a(href='/products/myhero')
-                img(src='img/games-apps/MyHero.jpg', alt='MyChat')
+                img(src=assetPath('img/common/games-apps/MyHero.jpg'), alt='MyChat')
             .app
               .name
                 a(href='/products/myhero') My Hero - Bo Lattae
@@ -129,12 +128,12 @@ html(lang='en')
                 | One of the very first RPS games in Myanmar featuring a variety of well known Heroes within an adventurous fantasy
                 | world.
               .version
-                img(src='img/icon/ic-update.png', alt='latest')
+                img(src=assetPath('img/common/icon/ic-update.png'), alt='latest')
                 |  Released in May 2017
           .card
             .cover
               a(href='/products/luckywingabar')
-                img(src='img/games-apps/LuckyWingabar.jpg', alt='MyChat')
+                img(src=assetPath('img/common/games-apps/LuckyWingabar.jpg'), alt='MyChat')
             .app
               .name
                 a(href='/products/luckywingabar') Lucky Wingabar
@@ -142,12 +141,12 @@ html(lang='en')
                 | A luxury casino gaming experience where you can enjoy a variety of games such as: shan koe mee, poker show, blackjack
                 | and join weekly tournaments.
               .version
-                img(src='img/icon/ic-update.png', alt='latest')
+                img(src=assetPath('img/common/icon/ic-update.png'), alt='latest')
                 |  Released in March 2017
           .card
             .cover
               a(href='/products/hawkhero')
-                img(src='img/games-apps/HawkHero.jpg', alt='MyChat')
+                img(src=assetPath('img/common/games-apps/HawkHero.jpg'), alt='MyChat')
             .app
               .name
                 a(href='/products/hawkhero') Hawk Hero
@@ -155,19 +154,19 @@ html(lang='en')
                 | The first epic Wuxia martial arts game available on mobile in Myanmar, bringing a truly immersive RPG experience
                 | to your phone.
               .version
-                img(src='img/icon/ic-update.png', alt='latest')
+                img(src=assetPath('img/common/icon/ic-update.png'), alt='latest')
                 |  Released in September 2016
           .card
             .cover
               a(href='/products/myfish')
-                img(src='img/games-apps/MyFish.jpg', alt='MyChat')
+                img(src=assetPath('img/common/games-apps/MyFish.jpg'), alt='MyChat')
             .app
               .name
                 a(href='/products/myfish') MyFish
               .description
                 | One of the very first mobile games in Myanmar. Catch as many fish and sea animals as you can! Win real rewards!
               .version
-                img(src='img/icon/ic-update.png', alt='latest')
+                img(src=assetPath('img/common/icon/ic-update.png'), alt='latest')
                 |  Released in August 2016
       // end of all page
       #games.content.tabcontent
@@ -175,7 +174,7 @@ html(lang='en')
           .card
             .cover
               a(href='/products/landofmagic')
-                img(src='img/games-apps/LOM.png', alt='MyChat')
+                img(src=assetPath('img/common/games-apps/LOM.png'), alt='MyChat')
             .app
               .name
                 a(href='/products/landofmagic') Land of Magic
@@ -183,12 +182,12 @@ html(lang='en')
                 | The first MMORPG in Myanmar with three classes of characters to choose from and nine unique skills to engage
                 | in PvP battles.
               .version
-                img(src='img/icon/ic-update.png', alt='latest')
+                img(src=assetPath('img/common/icon/ic-update.png'), alt='latest')
                 |  Released in August 2017
           .card
             .cover
               a(href='/products/myhero')
-                img(src='img/games-apps/MyHero.jpg', alt='MyChat')
+                img(src=assetPath('img/common/games-apps/MyHero.jpg'), alt='MyChat')
             .app
               .name
                 a(href='/products/myhero') My Hero - Bo Lattae
@@ -196,12 +195,12 @@ html(lang='en')
                 | One of the very first RPS games in Myanmar featuring a variety of well known Heroes within an adventurous fantasy
                 | world.
               .version
-                img(src='img/icon/ic-update.png', alt='latest')
+                img(src=assetPath('img/common/icon/ic-update.png'), alt='latest')
                 |  Released in May 2017
           .card
             .cover
               a(href='/products/luckywingabar')
-                img(src='img/games-apps/LuckyWingabar.jpg', alt='MyChat')
+                img(src=assetPath('img/common/games-apps/LuckyWingabar.jpg'), alt='MyChat')
             .app
               .name
                 a(href='/products/luckywingabar') Lucky Wingabar
@@ -209,12 +208,12 @@ html(lang='en')
                 | A luxury casino gaming experience where you can enjoy a variety of games such as: shan koe mee, poker show, blackjack
                 | and join weekly tournaments.
               .version
-                img(src='img/icon/ic-update.png', alt='latest')
+                img(src=assetPath('img/common/icon/ic-update.png'), alt='latest')
                 |  Released in March 2017
           .card
             .cover
               a(href='/products/hawkhero')
-                img(src='img/games-apps/HawkHero.jpg', alt='MyChat')
+                img(src=assetPath('img/common/games-apps/HawkHero.jpg'), alt='MyChat')
             .app
               .name
                 a(href='/products/hawkhero') Hawk Hero
@@ -222,19 +221,19 @@ html(lang='en')
                 | The first epic Wuxia martial arts game available on mobile in Myanmar, bringing a truly immersive RPG experience
                 | to your phone.
               .version
-                img(src='img/icon/ic-update.png', alt='latest')
+                img(src=assetPath('img/common/icon/ic-update.png'), alt='latest')
                 |  Released in September 2016
           .card
             .cover
               a(href='/products/myfish')
-                img(src='img/games-apps/MyFish.jpg', alt='MyChat')
+                img(src=assetPath('img/common/games-apps/MyFish.jpg'), alt='MyChat')
             .app
               .name
                 a(href='/products/myfish') MyFish
               .description
                 | One of the very first mobile games in Myanmar. Catch as many fish and sea animals as you can! Win real rewards!
               .version
-                img(src='img/icon/ic-update.png', alt='latest')
+                img(src=assetPath('img/common/icon/ic-update.png'), alt='latest')
                 |  Released in August 2016
       // end of games page
       #apps.content.tabcontent
@@ -242,7 +241,7 @@ html(lang='en')
           .card
             .cover
               a(href='/products/mychat')
-                img(src='img/games-apps/MyChat.jpg', alt='MyChat')
+                img(src=assetPath('img/common/games-apps/MyChat.jpg'), alt='MyChat')
             .app
               .name
                 a(href='/products/mychat') MyChat
@@ -250,49 +249,50 @@ html(lang='en')
                 | A chat app built solely for Myanmar. MyChat brings you a fast and reliable chat experience that is smooth even
                 | on low end devices and flaky cellular networks.
               .version
-                img(src='img/icon/ic-update.png', alt='latest')
+                img(src=assetPath('img/common/icon/ic-update.png'), alt='latest')
                 |  V2.5 Released in August 2017
           .card
             .cover
               a(href='/products/callhome')
-                img(src='img/games-apps/CallHome.jpg', alt='Callhome')
+                img(src=assetPath('img/common/games-apps/CallHome.jpg'), alt='Callhome')
             .app
               .name
                 a(href='/products/callhome') CallHome
               .description
                 | A VOIP app that lets you call anyone internationally at affordable rates, even if they don't have the app installed!
               .version
-                img(src='img/icon/ic-update.png', alt='latest')
+                img(src=assetPath('img/common/icon/ic-update.png'), alt='latest')
                 |  V1.3 Released in July 2017
           .card
             .cover
               a(href='/products/fastsell')
-                img(src='img/games-apps/FastSell.jpg', alt='MyChat')
+                img(src=assetPath('img/common/games-apps/FastSell.jpg'), alt='MyChat')
             .app
               .name
                 a(href='/products/fastsell') FastSell
               .description A peer-to-peer marketplace, allowing people to trade with other people nearby.
               .version
-                img(src='img/icon/ic-update.png', alt='latest')
+                img(src=assetPath('img/common/icon/ic-update.png'), alt='latest')
                 |  V2.6 Released in July 2017
           .card
             .cover
               a(href='/products/mingalarbarmorning')
-                img(src='img/games-apps/MM.jpg', alt='MyChat')
+                img(src=assetPath('img/common/games-apps/MM.jpg'), alt='MyChat')
             .app
               .name
                 a(href='/products/mingalarbarmorning') Mingalarbar Morning
               .description
                 | A news aggregator delivering the latest breaking news and top stories in Myanmar and around the world.
               .version
-                img(src='img/icon/ic-update.png', alt='latest')
+                img(src=assetPath('img/common/icon/ic-update.png'), alt='latest')
                 |  Released in July 2017
       // end of apps page
     .scroll-small
       .holder
-        img(src='img/icon/bk_top_blk.gif', alt='ic-back-to-top', onclick='topFunction()')
+        img(src=assetPath('img/common/icon/bk_top_blk.gif'), alt='ic-back-to-top', onclick='topFunction()')
         div(onclick='topFunction()') Back to top
     footer.product-footer
       span © 2017 SQUAR PTE LTD. All Rights Reserved.
-    script(type='text/javascript ', src='js/vendor/jquery.min.js ')
-    script(type='text/javascript ', src='js/products-index.js ')
+    script(src=assetPath('jquery.min.js'))
+    script(src=assetPath('products-index.js'))
+

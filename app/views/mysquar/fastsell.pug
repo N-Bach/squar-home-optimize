@@ -4,18 +4,17 @@ html(lang='en')
     title MYSQUAR - Connecting Myanmar
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='stylesheet', type='text/css', href='/css/vendor/animate.min.css')
-    link(rel='stylesheet', type='text/css', href='/css/base-sidenav.css')
-    link(rel='stylesheet', type='text/css', href='/css/detail/callhome.css')
-    link(rel='stylesheet', type='text/css', href='/css/detail/fastsell.css')
-    link(rel='shortcut icon', href='/img/icon/favicon.ico')
+    link(href=assetPath('animate.min.css'), rel='stylesheet')
+    link(href=assetPath('base-sidenav.css'), rel='stylesheet')
+    link(href=assetPath('callhome.css'), rel='stylesheet')
+    link(href=assetPath('fastsell.css'), rel='stylesheet')
   body
     a(href='/')
-      img.logo.pointer.animated.fadeInLeft(src='/img/icon/Logo-Mysquar.png', alt='logo')
+      img.logo.pointer.animated.fadeInLeft(src=assetPath('img/common/icon/Logo-Mysquar.png'), alt='logo')
     span#hamburger.pointer.animated.fadeInRight(onclick='openNav()')
-      img#ic-hamburger(src='/img/icon/ic-menu.png', alt='sidenav')
+      img#ic-hamburger(src=assetPath('img/common/icon/ic-menu.png'), alt='sidenav')
     #mySidenav.sidenav
-      img.closebtn.pointer(src='/img/icon/ic-close.png', alt='Close', onclick='closeNav()')
+      img.closebtn.pointer(src=assetPath('img/common/icon/ic-close.png'), alt='Close', onclick='closeNav()')
       .page-link
         a(href='/products')
           span Our Products
@@ -28,17 +27,17 @@ html(lang='en')
       footer
         .social-link
           a(href='https://twitter.com/mysquar', target='_blank')
-            img(src='/img/icon/ic-twitter.png', alt='twitter')
+            img(src=assetPath('img/common/icon/ic-twitter.png'), alt='twitter')
           a(href='https://www.linkedin.com/company/squar-asia', target='_blank')
-            img(src='/img/icon/ic-linkedin.png', alt='linked')
+            img(src=assetPath('img/common/icon/ic-linkedin.png'), alt='linked')
           a(href='https://www.youtube.com/channel/UChv63ZLGBBQERh2Kz4T84Iw', target='_blank')
-            img(src='/img/icon/ic-youtube.png', alt='youtube')
+            img(src=assetPath('img/common/icon/ic-youtube.png'), alt='youtube')
         span © 2017 SQUAR PTE LTD. All Rights Reserved
     .breadcrum-container.animated.fadeIn
       ul.breadcrumb
         li
           a(href='/')
-            img.ic-home(src='/img/icon/ic-home-white.png', alt='Home')
+            img.ic-home(src=assetPath('img/common/icon/ic-home-white.png'), alt='Home')
         li
           a(href='/products') OUR PRODUCTS
         li FASTSELL
@@ -48,21 +47,21 @@ html(lang='en')
         #fastsell-hero.hero.animated.fadeInLeft.delay-hero
         .intro.animated.fadeInRight.delay-intro
           .logo-mychat.mg-bottom-8
-            img(src='/img/detail/fastsell/logo.png', alt='logo-fastsell', height='80px', width='80px')
+            img(src=assetPath('img/common/detail/fastsell/logo.png'), alt='logo-fastsell', height='80px', width='80px')
           .name.mg-bottom-8
             | FastSell
           .description.mg-bottom-26
             | A peer-to-peer marketplace, allowing people to trade with others nearby.
           .app-link.mg-bottom-26
             button.apk(onclick="window.open('https://fastsell.com.mm/apk_download/app-production-release.apk','_blank')")
-              img(src='/img/icon/ic-download.png', alt='Download APK')
+              img(src=assetPath('img/common/icon/ic-download.png'), alt='Download APK')
               |  APK Download
             button.google-play(onclick=" window.open('https://play.google.com/store/apps/details?id=vn.fastsell.app.mm','_blank')")
-              img(src='/img/icon/btt-google.png', alt='Get CallHome in Google Play')
+              img(src=assetPath('img/common/icon/btt-google.png'), alt='Get CallHome in Google Play')
           .follow
             | Follow us on
             a(href='https://www.facebook.com/FastSellMyanmar/', target='_blank')
-              img(src='/img/icon/if-fb-white.png', alt='CallHome FB page', width='24px', height='24px')
+              img(src=assetPath('img/common/icon/if-fb-white.png'), alt='CallHome FB page', width='24px', height='24px')
     .container
       section#overview.bg-grey.section-padding
         .content
@@ -77,12 +76,12 @@ html(lang='en')
                   | Download the FastSell app and enjoy the convenience of having a nearby flea market on your smartphone!
           .half.is-animated-right.delay-overview
             .mockup
-              img(src='/img/detail/fastsell/mockup-overview.png', alt='fastsell-overview')
+              img(src=assetPath('img/common/detail/fastsell/mockup-overview.png'), alt='fastsell-overview')
       section#feature.section-padding
         #special-content-reverse.content
           .half.is-animated-left
             .mockup
-              img(src='/img/detail/fastsell/mockup-feature-1.png', alt='fastsell-overview')
+              img(src=assetPath('img/common/detail/fastsell/mockup-feature-1.png'), alt='fastsell-overview')
           .half.is-animated-right
             .text
               .wrapper.maxwidth-feature
@@ -113,12 +112,12 @@ html(lang='en')
                   br
           .half.is-animated-right
             .mockup
-              img(src='/img/detail/fastsell/mockup-feature-2.png', alt='fastsell-overview')
+              img(src=assetPath('img/common/detail/fastsell/mockup-feature-2.png'), alt='fastsell-overview')
       section#feature2.section-padding
         #special-content-reverse.content
           .half.is-animated-left
             .mockup
-              img(src='/img/detail/fastsell/mockup-feature-3.png', alt='fastsell-overview')
+              img(src=assetPath('img/common/detail/fastsell/mockup-feature-3.png'), alt='fastsell-overview')
           .half.is-animated-right
             .text
               .wrapper.maxwidth-feature
@@ -135,7 +134,7 @@ html(lang='en')
       span © 2017 SQUAR PTE LTD. All Rights Reserved.
     script.
       var isGame = true;
-    script(type='text/javascript ', src='/js/vendor/jquery.min.js ')
-    script(type='text/javascript ', src='/js/vendor/jquery.viewportchecker.min.js')
-    script(type='text/javascript ', src='/js/base-sidenav.js ')
-    script(type='text/javascript ', src='/js/detail/animation.js ')
+    script(src=assetPath('jquery.min.js'))
+    script(src=assetPath('jquery.viewportchecker.min.js'))
+    script(src=assetPath('base-sidenav.js'))
+    script(src=assetPath('animation.js'))

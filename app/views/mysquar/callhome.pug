@@ -4,17 +4,16 @@ html(lang='en')
     title MYSQUAR - Connecting Myanmar
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='stylesheet', type='text/css', href='/css/vendor/animate.min.css')
-    link(rel='stylesheet', type='text/css', href='/css/base-sidenav.css')
-    link(rel='stylesheet', type='text/css', href='/css/detail/callhome.css')
-    link(rel='shortcut icon', href='/img/icon/favicon.ico')
+    link(href=assetPath('animate.min.css'), rel='stylesheet')
+    link(href=assetPath('base-sidenav.css'), rel='stylesheet')
+    link(href=assetPath('callhome.css'), rel='stylesheet')
   body
     a(href='/')
-      img.logo.pointer.animated.fadeInLeft(src='/img/icon/Logo-Mysquar.png', alt='logo')
+      img.logo.pointer.animated.fadeInLeft(src=assetPath('img/common/icon/Logo-Mysquar.png'), alt='logo')
     span#hamburger.pointer.animated.fadeInRight(onclick='openNav()')
-      img#ic-hamburger(src='/img/icon/ic-menu.png', alt='sidenav')
+      img#ic-hamburger(src=assetPath('img/common/icon/ic-menu.png'), alt='sidenav')
     #mySidenav.sidenav
-      img.closebtn.pointer(src='/img/icon/ic-close.png', alt='Close', onclick='closeNav()')
+      img.closebtn.pointer(src=assetPath('img/common/icon/ic-close.png'), alt='Close', onclick='closeNav()')
       .page-link
         a(href='/products')
           span Our Products
@@ -27,27 +26,26 @@ html(lang='en')
       footer
         .social-link
           a(href='https://twitter.com/mysquar', target='_blank')
-            img(src='/img/icon/ic-twitter.png', alt='twitter')
+            img(src=assetPath('img/common/icon/ic-twitter.png'), alt='twitter')
           a(href='https://www.linkedin.com/company/squar-asia', target='_blank')
-            img(src='/img/icon/ic-linkedin.png', alt='linked')
+            img(src=assetPath('img/common/icon/ic-linkedin.png'), alt='linked')
           a(href='https://www.youtube.com/channel/UChv63ZLGBBQERh2Kz4T84Iw', target='_blank')
-            img(src='/img/icon/ic-youtube.png', alt='youtube')
+            img(src=assetPath('img/common/icon/ic-youtube.png'), alt='youtube')
         span © 2017 SQUAR PTE LTD. All Rights Reserved
     .breadcrum-container.animated.fadeIn
       ul.breadcrumb
         li
           a(href='/')
-            img.ic-home(src='/img/icon/ic-home-white.png', alt='Home')
+            img.ic-home(src=assetPath('img/common/icon/ic-home-white.png'), alt='Home')
         li
           a(href='/products') OUR PRODUCTS
         li CALLHOME
     #callhome-bg.header.animated.fadeIn
       .content
-        // <div class="hero half"></div>
         #callhome-hero.hero.animated.fadeInLeft.delay-hero
         .intro.animated.fadeInRight.delay-intro
           .logo-mychat.mg-bottom-8
-            img(src='/img/detail/callhome/logo-callhome.png', alt='logo-callhome', height='80px', width='80px')
+            img(src=assetPath('img/common/detail/callhome/logo-callhome.png'), alt='logo-callhome', height='80px', width='80px')
           .name.mg-bottom-8
             | CallHome
           .description.mg-bottom-26
@@ -58,11 +56,11 @@ html(lang='en')
               | and Vietnam.
           .app-link.mg-bottom-26
             button.google-play(onclick=" window.open('https://play.google.com/store/apps/details?id=com.squar.callhome.production','_blank')")
-              img(src='/img/icon/btt-google.png', alt='Get CallHome in Google Play')
+              img(src=assetPath('img/common/icon/btt-google.png'), alt='Get CallHome in Google Play')
           .follow
             | Follow us on
             a(href='https://www.facebook.com/CallHomeMySQUAR/', target='_blank')
-              img(src='/img/icon/if-fb-white.png', alt='CallHome FB page', width='24px', height='24px')
+              img(src=assetPath('img/common/icon/if-fb-white.png'), alt='CallHome FB page', width='24px', height='24px')
     .container
       section#overview.bg-grey.section-padding
         .content
@@ -83,12 +81,12 @@ html(lang='en')
                   |  Who's waiting to hear from you? Don't let them wait - Call them right away!
           .half.is-animated-right.delay-overview
             .mockup
-              img(src='/img/detail/callhome/mockup-update.png', alt='callhome-overview')
+              img(src=assetPath('img/common/detail/callhome/mockup-update.png'), alt='callhome-overview')
       section#feature.section-padding
         #special-content-reverse.content
           .half.is-animated-left
             .mockup
-              img(src='/img/detail/callhome/mockup-feature.png', alt='callhome-overview')
+              img(src=assetPath('img/common/detail/callhome/mockup-feature.png'), alt='callhome-overview')
           .half.is-animated-right
             .text
               .wrapper.maxwidth-feature
@@ -111,34 +109,12 @@ html(lang='en')
                   |  Seamless payment using Stripe and PayPal.
                   br
                   br
-      //
-        <section id="update" class="bg-grey section-padding">
-        <div class="content">
-        <div class="half is-animated-left">
-        <div class="text">
-        <div class="wrapper maxwidth-update">
-        <div class="title">
-        what’s new.
-        </div>
-        <div class="body">
-        - Caller sees charges for each call <br/> - Caller calls to a phone number using dial pad <br/> - When caller
-        is typing dial pad, show matching contact name <br/> - Payment by credit card with Stripe <br/>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="half is-animated-right">
-        <div class="mockup">
-        <img src="/img/detail/callhome/mockup-update.png" alt="callhome-overview">
-        </div>
-        </div>
-        </div>
-        </section>
     footer.product-footer.animated.fadeIn.delay-foot
       span © 2017 SQUAR PTE LTD. All Rights Reserved.
     script.
       var isGame = true;
-    script(type='text/javascript ', src='/js/vendor/jquery.min.js ')
-    script(type='text/javascript ', src='/js/vendor/jquery.viewportchecker.min.js')
-    script(type='text/javascript ', src='/js/base-sidenav.js ')
-    script(type='text/javascript ', src='/js/detail/animation.js ')
+    script(src=assetPath('jquery.min.js'))
+    script(src=assetPath('jquery.viewportchecker.min.js'))
+    script(src=assetPath('base-sidenav.js'))
+    script(src=assetPath('animation.js'))
+

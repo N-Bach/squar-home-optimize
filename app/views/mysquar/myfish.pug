@@ -4,18 +4,17 @@ html(lang='en')
     title MYSQUAR - Connecting Myanmar
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='stylesheet', type='text/css', href='/css/vendor/animate.min.css')
-    link(rel='stylesheet', type='text/css', href='/css/base-sidenav.css')
-    link(rel='stylesheet', type='text/css', href='/css/detail/lom.css')
-    link(rel='stylesheet', type='text/css', href='/css/detail/myfish.css')
-    link(rel='shortcut icon', href='/img/icon/favicon.ico')
+    link(href=assetPath('animate.min.css'), rel='stylesheet')
+    link(href=assetPath('base-sidenav.css'), rel='stylesheet')
+    link(href=assetPath('lom.css'), rel='stylesheet')
+    link(href=assetPath('myfish.css'), rel='stylesheet')
   body
     a(href='/')
-      img.logo.pointer.animated.fadeInLeft(src='/img/icon/Logo-Mysquar.png', alt='logo')
+      img.logo.pointer.animated.fadeInLeft(src=assetPath('img/common/icon/Logo-Mysquar.png'), alt='logo')
     span#hamburger.pointer.animated.fadeInRight(onclick='openNav()')
-      img#ic-hamburger(src='/img/icon/ic-menu.png', alt='sidenav')
+      img#ic-hamburger(src=assetPath('img/common/icon/ic-menu.png'), alt='sidenav')
     #mySidenav.sidenav
-      img.closebtn.pointer(src='/img/icon/ic-close.png', alt='Close', onclick='closeNav()')
+      img.closebtn.pointer(src=assetPath('img/common/icon/ic-close.png'), alt='Close', onclick='closeNav()')
       .page-link
         a(href='/products')
           span Our Products
@@ -28,17 +27,17 @@ html(lang='en')
       footer
         .social-link
           a(href='https://twitter.com/mysquar', target='_blank')
-            img(src='/img/icon/ic-twitter.png', alt='twitter')
+            img(src=assetPath('img/common/icon/ic-twitter.png'), alt='twitter')
           a(href='https://www.linkedin.com/company/squar-asia', target='_blank')
-            img(src='/img/icon/ic-linkedin.png', alt='linked')
+            img(src=assetPath('img/common/icon/ic-linkedin.png'), alt='linked')
           a(href='https://www.youtube.com/channel/UChv63ZLGBBQERh2Kz4T84Iw', target='_blank')
-            img(src='/img/icon/ic-youtube.png', alt='youtube')
+            img(src=assetPath('img/common/icon/ic-youtube.png'), alt='youtube')
         span © 2017 SQUAR PTE LTD. All Rights Reserved
     .breadcrum-container.animated.fadeIn
       ul.breadcrumb
         li
           a(href='/')
-            img.ic-home(src='/img/icon/ic-home-white.png', alt='Home')
+            img.ic-home(src=assetPath('img/common/icon/ic-home-white.png'), alt='Home')
         li
           a(href='/products') OUR PRODUCTS
         li MYFISH
@@ -49,7 +48,7 @@ html(lang='en')
         .intro.animated.fadeInRight.delay-intro
           // <div class="intro half">
           .logo-lom.mg-bottom-8
-            img(src='/img/detail/myfish/logo.png', alt='logo-myfish')
+            img(src=assetPath('img/common/detail/myfish/logo.png'), alt='logo-myfish')
           .name.mg-bottom-8
             | MyFish
           .description.mg-bottom-26
@@ -57,16 +56,16 @@ html(lang='en')
             | underwater world full of fish, sea animals and mermaids!
           .app-link.mg-bottom-26
             button.apk(onclick="window.open('http://tracking.squargame.com/download.php?game=myfish&utm_source=Landing_APK','_blank')")
-              img(src='/img/icon/ic-download.png', alt='Download APK')
+              img(src=assetPath('img/common/icon/ic-download.png'), alt='Download APK')
               |  APK Download
             button.google-play(onclick=" window.open('https://play.google.com/store/apps/details?id=com.mygame.myfish&referrer=utm_source%3DLanding_GP','_blank')")
-              img(src='/img/icon/btt-google.png', alt='Get MyFish in Google Play')
+              img(src=assetPath('img/common/icon/btt-google.png'), alt='Get MyFish in Google Play')
             button.app-store(onclick=" window.open('https://itunes.apple.com/us/app/myfishmm/id1136092706','_blank')")
-              img(src='/img/icon/btt-appstore.png', alt='Get MyFish in App Store')
+              img(src=assetPath('img/common/icon/btt-appstore.png'), alt='Get MyFish in App Store')
           .follow
             | Follow us on
             a(href='https://www.facebook.com/myfishmm/', target='_blank')
-              img(src='/img/icon/if-fb-white.png', alt='MyFish FB page', width='24px', height='24px')
+              img(src=assetPath('img/common/icon/if-fb-white.png'), alt='MyFish FB page', width='24px', height='24px')
             span
               | Website:
               a(href='http://myfishmm.com', target='_blank') myfishmm.com
@@ -82,11 +81,11 @@ html(lang='en')
               | can exchange gold coins from the game into real rewards for mobile top-up cards. This fish hunting game is unlike
               | any experience that you’ve ever had before. Let’s go catch some fish!
         .mockup.pd-left-52.is-animated-right
-          img(src='/img/detail/myfish/mockup-overview.png', alt='myfish-overview')
+          img(src=assetPath('img/common/detail/myfish/mockup-overview.png'), alt='myfish-overview')
       // end of overview
       #feature.content.pd-bottom-32.bg-dark
         .mockup.pd-right-52.justify-end.is-animated-left
-          img(src='/img/detail/myfish/mockup-features.png', alt='myfish-features')
+          img(src=assetPath('img/common/detail/myfish/mockup-features.png'), alt='myfish-features')
         .text-start.is-animated-right
           #myfish-maxwidth.wrapper
             .title
@@ -106,7 +105,7 @@ html(lang='en')
       span © 2017 SQUAR PTE LTD. All Rights Reserved.
     script.
       var isGame = true;
-    script(type='text/javascript ', src='/js/vendor/jquery.min.js ')
-    script(type='text/javascript ', src='/js/vendor/jquery.viewportchecker.min.js')
-    script(type='text/javascript ', src='/js/base-sidenav.js ')
-    script(type='text/javascript ', src='/js/detail/lom.js ')
+    script(src=assetPath('jquery.min.js'))
+    script(src=assetPath('jquery.viewportchecker.min.js'))
+    script(src=assetPath('base-sidenav.js'))
+    script(src=assetPath('lom.js'))
