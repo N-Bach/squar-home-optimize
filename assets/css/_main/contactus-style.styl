@@ -12,127 +12,8 @@ a {
   font-family: "GillSans-Light";
 }
 
-#hamburger {
-  position: fixed;
-  top: 38px;
-  right: 38px;
-  z-index: 10;
-}
-
-#hamburger img {
-  width: 28px;
-  height: 21px;
-}
-
-/* The side navigation menu */
-.sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 110; /* Stay on top */
-  top: 0;
-  right: 0;
-  /* background-color: #111;  Black */
-  background-image: url('img/common/bg.jpg');
-  background-size: 100% 100%;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  /* padding-top: 60px;  Place content 60px from the top  */
-  transition: 0.2s; /* 0.5 second transition effect to slide in the sidenav */
-}
-
-/* The navigation menu links */
-.sidenav .page-link a {
-  text-decoration: none;
-  color: white;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 46px;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav .page-link a span {
-  display: block;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav .page-link a:hover,
-.offcanvas .page-link a:focus {
-  border-left: 6px solid white;
-}
-
-.sidenav .page-link a span:hover,
-.offcanvas .page-link a span:focus {
-  opacity: 0.6;
-}
-
-.sidenav .page-link a.active {
-  opacity: 0.6;
-  pointer-events: none;
-  cursor: default;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-  position: absolute;
-  font-size: 36px;
-  margin-left: 50px;
-  top: 38px;
-  right: 40px;
-}
-
 .pointer {
   cursor: pointer;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-  transition: margin-left .5s;
-  padding: 20px;
-}
-
-#mySidenav footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 16px;
-}
-
-#mySidenav .social-link {
-  padding: 8px 16px;
-}
-
-#mySidenav .social-link  a {
-  display: inline;
-  padding: 0;
-  margin: 0;
-  transition: 0.2s;
-}
-
-#mySidenav .social-link  a:hover {
-  opacity: 0.6;
-}
-
-#mySidenav .social-link img {
-  margin-right: 4px;
-  height: 32px;
-  width: 32px;
-}
-
-#mySidenav footer span {
-  color: white;
-  font-size: 14px;
-  margin: 8px 16px;
-}
-
-#mySidenav .page-link {
-  margin-top: 130px;
-}
-
-#mySidenav .page-link a {
-  padding: 8px 8px 16px 32px;
-  font-weight: 600;
-  line-height: 1.15;
 }
 
 .container {
@@ -146,7 +27,6 @@ a {
 
 .content {
   margin: auto auto;
-  /* height: 500px; */
   width: 690px;
   display: flex;
   flex-direction: column;
@@ -264,66 +144,6 @@ a {
   width: 56px;
   height: 56px;
   z-index: 10;
-}
-
-.breadcrum-container {
-  position: absolute;
-  top: 30px;
-  left: 153px;
-  z-index: 10;
-  /* height: 50px; */
-  display: flex;
-  align-items: center;
-  box-sizing: border-box;
-}
-
-/* Style the list */
-ul.breadcrumb {
-  padding: 0;
-  list-style: none;
-  font-size: 17px;
-  margin: auto;
-}
-
-ul.breadcrum .ic-home {
-  width: 23px;
-  height: 20px;
-  display: inline-block;
-}
-
-/* Display list items side by side */
-ul.breadcrumb li {
-  display: block;
-  font-size: 12px;
-  font-weight: 600;
-  text-align: center;
-  color: #ffffff;
-  float: left;
-  line-height: 24px;
-  font-family: "GillSans-SemiBold";
-}
-
-ul.breadcrumb li img {
-  vertical-align: center;
-}
-
-/* Add a slash symbol (/) before/behind each list item */
-ul.breadcrumb li + li:before {
-  padding: 0 8px;
-  content: url('img/common/icon/ic-arrow-white.png'); /* with class ModalCarrot ??*/
-}
-
-/* Add a color to all links inside the list */
-ul.breadcrumb li a {
-  color: white;
-  text-decoration: none;
-  transition: 0.2s;
-  font-family: "GillSans-SemiBold";
-}
-
-/* Add a color on mouse-over */
-ul.breadcrumb li a:hover {
-  color: #e4b315;
 }
 
 @media (max-width: 700px) {
