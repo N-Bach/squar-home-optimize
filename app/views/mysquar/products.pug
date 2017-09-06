@@ -10,6 +10,12 @@ html(lang='en')
   body
     span#hamburger.pointer.animated.fadeInRight(onclick='openNav()')
       img#ic-hamburger(src=assetPath('img/common/icon/ic-menu.png'), alt='sidenav')
+    .breadcrum-container.animated.fadeIn
+      ul.breadcrumb
+        li
+          a(href='/')
+            img.ic-home(src=assetPath('img/common/icon/ic-home-white.png'), alt='Home')
+        li CONTACT US
     #mySidenav.sidenav
       img.closebtn.pointer(src=assetPath('img/common/icon/ic-close.png'), alt='Close', onclick='closeNav()')
       .page-link
@@ -291,8 +297,7 @@ html(lang='en')
       .holder
         img(src=assetPath('img/common/icon/bk_top_blk.gif'), alt='ic-back-to-top', onclick='topFunction()')
         div(onclick='topFunction()') Back to top
-    footer.product-footer
-      span © 2017 SQUAR PTE LTD. All Rights Reserved.
+    include ../components/footer
     script(src=assetPath('jquery.min.js'))
     script(src=assetPath('products-index.js'))
 

@@ -12,28 +12,7 @@ html(lang='en')
   body
     a(href='/')
       img.logo.pointer.animated.fadeInLeft(src=assetPath('img/common/icon/Logo-Mysquar.png'), alt='logo')
-    span#hamburger.pointer.animated.fadeInRight(onclick='openNav()')
-      img#ic-hamburger(src=assetPath('img/common/icon/ic-menu.png'), alt='sidenav')
-    #mySidenav.sidenav
-      img.closebtn.pointer(src=assetPath('img/common/icon/ic-close.png'), alt='Close', onclick='closeNav()')
-      .page-link
-        a(href='/products')
-          span Our Products
-        a(href='https://careers.mysquar.com/', target='_blank')
-          span We Are Hiring
-        a(href='http://investors.mysquar.com/', target='_blank')
-          span For Investors
-        a(href='/contactus ')
-          span Contact Us
-      footer
-        .social-link
-          a(href='https://twitter.com/mysquar', target='_blank')
-            img(src=assetPath('img/common/icon/ic-twitter.png'), alt='twitter')
-          a(href='https://www.linkedin.com/company/squar-asia', target='_blank')
-            img(src=assetPath('img/common/icon/ic-linkedin.png'), alt='linked')
-          a(href='https://www.youtube.com/channel/UChv63ZLGBBQERh2Kz4T84Iw', target='_blank')
-            img(src=assetPath('img/common/icon/ic-youtube.png'), alt='youtube')
-        span © 2017 SQUAR PTE LTD. All Rights Reserved
+    include ../components/sidenav
     .breadcrum-container.animated.fadeIn
       ul.breadcrumb
         li
@@ -134,8 +113,7 @@ html(lang='en')
                     | A lottery game with 3 game variants with drawings held instantly, every 60 seconds or daily at 17:30.
       // end of feature
     // end of container
-    footer.product-footer.animated.fadeIn.delay-foot
-      span © 2017 SQUAR PTE LTD. All Rights Reserved.
+    include ../components/footer
     script.
       var isGame = true;
     script(src=assetPath('jquery.min.js'))

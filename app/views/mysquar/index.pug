@@ -16,31 +16,7 @@ html(lang='en')
   body
     a(href='/')
       img.logo.pointer.animated.fadeInLeft(src=assetPath('img/common/icon/Logo-Mysquar.png'), alt='logo')
-    span#hamburger.pointer.animated.fadeInRight(onclick='openNav()')
-      img#ic-hamburger(src=assetPath('img/common/icon/ic-menu.png'), alt='sidenav')
-    .scroll-indicator.animated.fadeInRight
-      img#scroll-down.pointer(src=assetPath('img/common/icon/ic-animated-scroll.gif'), alt='ic-scroll-down', onclick='scrollDown')
-      span#text-scroll-down.pointer(onclick='scrollDown') Scroll down
-    #mySidenav.sidenav
-      img.closebtn.pointer(src=assetPath('img/common/icon/ic-close.png'), alt='Close', onclick='closeNav()')
-      .page-link
-        a(href='/products')
-          span Our Products
-        a(href='https://careers.mysquar.com/', target='_blank')
-          span We Are Hiring
-        a(href='http://investors.mysquar.com/', target='_blank')
-          span For Investors
-        a(href='/contactus ')
-          span Contact Us
-      footer
-        .social-link
-          a(href='https://twitter.com/mysquar', target='_blank')
-            img(src=assetPath('img/common/icon/ic-twitter.png'), alt='twitter')
-          a(href='https://www.linkedin.com/company/squar-asia', target='_blank')
-            img(src=assetPath('img/common/icon/ic-linkedin.png'), alt='linked')
-          a(href='https://www.youtube.com/channel/UChv63ZLGBBQERh2Kz4T84Iw', target='_blank')
-            img(src=assetPath('img/common/icon/ic-youtube.png'), alt='youtube')
-        span © 2017 SQUAR PTE LTD. All Rights Reserved
+    include ../components/sidenav
     .container
       #fullpage
         #section1.section(active='')
